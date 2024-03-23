@@ -67,7 +67,17 @@ In this project data is obtained from Home credit default risk at Kaggle.com
 ```
 
 # Sentiment Analysis  
+Below is code for carrying out sentiment analysis using TextBlob to score the reviews and then bin into three cateogries e.g negative, neutral and positive.
+``` bash
+# Create a new column 'sentiment' to store the sentiment scores
+df_filled_unsupervised['sentiment'] = df_filled_unsupervised['reviews.text'].apply(lambda text: TextBlob(text).sentiment.polarity)
 
+# Convert the continuous sentiment scores to categorical labels (e.g., positive, neutral, negative)
+df_filled_unsupervised['sentiment_label'] = pd.cut(df_filled_unsupervised['sentiment'], bins=3, labels=['negative', 'neutral', 'positive'])
+
+# Display the DataFrame with sentiment scores and labels
+print(df_filled_unsupervised[['reviews.text', 'sentiment', 'sentiment_label']])
+```
 
 # Statistical Analysis  
 
