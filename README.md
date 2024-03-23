@@ -1,2 +1,2 @@
-# amazon_products_sentimental_analysis
-Sentimental analysis of amazon products and products recommendation
+# amazon_products_sentiment_analysis
+Sentiment analysis of amazon products and products recommendation
