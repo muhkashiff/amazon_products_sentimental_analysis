@@ -23,35 +23,30 @@ Sentiment analysis of amazon products and products recommendation
 - [Author](#author)
 - [References](#references)
 
+# ETL
 ## Data Source
 In this project data is obtained from Home credit default risk at Kaggle.com 
 ## Data Sets
 
-
-# Transform
-
 ## Data Cleaning
 
-
-### Data Loading
-
-
-``` bash
-
-```
+## Data Loading
 
 
 ``` bash
 
 ```
 
-### Data Segregation
 
 ``` bash
 
 ```
+## Data Segregation
 
-### Data Processing
+``` bash
+
+```
+## Data Processing
 
 
 ``` bash
@@ -63,55 +58,36 @@ In this project data is obtained from Home credit default risk at Kaggle.com
 
 ```
 
+## Data Prediction  
 
-### Data Prediction  
-#### Supervised Learning  
-
-
-
-``` bash
-
-```
 
 
 ```
 
 ```
 
-#### UnSupervised Learning  
-
-``` bash
-
-```
- 
-```
+# Sentiment Analysis  
 
 
-```
+# Statistical Analysis  
 
-## Models Comparison
+| Feature            | Result (values)   |
+| :----------------- | :----------------: 
+|        count       |   33332.000000    |
+|         mean       |   0.364646        |  
+|         std        |   0.297416        |
+|        min         |  -1.000000        |
+|       25%          |   0.150000        |
+|        50%         |   0.350000        |
+|        75%         |   0.562500        |
+|         max        |   1.000000        |           
 
-
-| Column Name        | Supervised Results | UnSupervised Results |
-| :----------------- | :----------------: | :-------------------:|
-| OCCUPATION_TYPE    | 96391              | 96391                |
-| FONDKAPREMONT_MODE | 210295             | 210295               |
-| HOUSETYPE_MODE     | 154297             | 154297               |
-| WALLSMATERIAL_MODE | 156341             | 156341               |
-| EMERGENCYSTATE_MODE| 145755             | 145755               |
-
-Time taken tabular data:  
-
-| Time                 | Supervised Method   | UnSupervised Method  |
-| :-----------------   | :----------------:  | :-------------------:|
-| Minutes & Seconds    | 50 miutes 26 seconds| 1 minute 2 seconds   |  
+# Models Comparison  
 
 
 
 
-# Load
 
-### Data Export
 
 
 ## Results and Conclusions
@@ -122,7 +98,27 @@ Time taken tabular data:
 This project involves using various dependences listed below for data cleaning and predictions.
 
 ```bash
-
+# import Denpendencies
+import numpy as np
+import pandas as pd
+import os
+import matplotlib.pyplot as plt
+import seaborn as sns
+import time
+from sklearn.cluster import KMeans
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+from datetime import datetime
+from textblob import TextBlob
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.metrics import accuracy_score, classification_report
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 ```
 ## Future Work
