@@ -78,6 +78,34 @@ df_filled_unsupervised['sentiment_label'] = pd.cut(df_filled_unsupervised['senti
 # Display the DataFrame with sentiment scores and labels
 print(df_filled_unsupervised[['reviews.text', 'sentiment', 'sentiment_label']])
 ```
+### Top 10 Best Seller Products  
+
+
+Top 10 Products with Count:
+|Sr|                Name                                | Count |
+|:-|:--------------------------------------------------:|:-----:|
+|1 | AmazonBasics AAA Performance Alkaline Batterie...  | 8343  |
+|2 | AmazonBasics AA Performance Alkaline Batteries...  | 3728  |
+|3 |Fire HD 8 Tablet with Alexa, 8 HD Display, 16 ...   | 2443  |
+|4 | All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi,...  | 2370  |
+|5 | Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16...  | 1986  |
+|6 | Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16...  | 1676  |
+|7 | Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16...  | 1429  |
+|8 | Fire Tablet, 7 Display, Wi-Fi, 16 GB - Include...  | 1395  |
+|9 | Fire Tablet with Alexa, 7 Display, 16 GB, Blue...  | 987   |
+|10|  All-New Fire HD 8 Tablet with Alexa, 8 HD Disp... | 883   |
+
+
+### Highest Ratings by Customers  
+
+|Sr.| Ratings | Count  |
+|:-:|:-------:|:-----: |
+|1  |    5    | 23375  |
+|2  |    4    | 6856   |
+|3  |    3    | 1403   |
+|4  |    1    | 1028   |
+|5  |    2    | 670    |
+
 
 # Statistical Analysis  
 
@@ -92,6 +120,43 @@ print(df_filled_unsupervised[['reviews.text', 'sentiment', 'sentiment_label']])
 |        75%         |   0.562500        |
 |         max        |   1.000000        |           
 
+# Products Recommendation  
+
+``` bash
+user_review = "I absolutely not loved this product!"
+recommended_items = recommend_items(user_review)
+print("Recommended Items:")
+for item in recommended_items:
+    print(item)
+```
+Recommended products of negative review  
+
+```
+Recommended Items:
+All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi, 16 GB - Includes Special Offers, Black
+AmazonBasics AAA Performance Alkaline Batteries (36 Count)
+All-New Fire HD 8 Tablet, 8" HD Display, Wi-Fi, 16 GB - Includes Special Offers, Magenta
+AmazonBasics AAA Performance Alkaline Batteries (36 Count)
+Fire Tablet, 7 Display, Wi-Fi, 16 GB - Includes Special Offers, Black
+```
+Recommended items of postive review  
+``` bash
+user_review = "I absolutely loved this product!"
+recommended_items = recommend_items(user_review)
+print("Recommended Items:")
+for item in recommended_items:
+    print(item)
+```
+
+```
+Recommended Items:
+Fire Tablet, 7 Display, Wi-Fi, 16 GB - Includes Special Offers, Black
+Expanding Accordion File Folder Plastic Portable Document Organizer Letter Size
+AmazonBasics AA Performance Alkaline Batteries (48 Count) - Packaging May Vary
+Brand New Amazon Kindle Fire 16gb 7" Ips Display Tablet Wifi 16 Gb Blue
+AmazonBasics AAA Performance Alkaline Batteries (36 Count)
+
+```
 # Models Comparison  
 
 
