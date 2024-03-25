@@ -120,6 +120,8 @@ Top 10 Products with Count:
 |        75%         |   0.562500        |
 |         max        |   1.000000        |           
 
+![Alt Text](images/histo.png)  
+
 # Products Recommendation  
 
 ``` bash
@@ -158,7 +160,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 
 ```
 # Models Comparison  
-
+![Alt Text](images/accuracy-compar.png)
 
 
 
