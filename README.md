@@ -82,30 +82,51 @@ print(df_filled_unsupervised[['reviews.text', 'sentiment', 'sentiment_label']])
 
 
 Top 10 Products with Count:
-|Sr|                Name                                | Count |
+|Sr|                Name                                | Count |                  
 |:-|:--------------------------------------------------:|:-----:|
 |1 | AmazonBasics AAA Performance Alkaline Batterie...  | 8343  |
-|2 | AmazonBasics AA Performance Alkaline Batteries...  | 3728  |
-|3 |Fire HD 8 Tablet with Alexa, 8 HD Display, 16 ...   | 2443  |
-|4 | All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi,...  | 2370  |
-|5 | Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16...  | 1986  |
-|6 | Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16...  | 1676  |
-|7 | Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16...  | 1429  |
-|8 | Fire Tablet, 7 Display, Wi-Fi, 16 GB - Include...  | 1395  |
-|9 | Fire Tablet with Alexa, 7 Display, 16 GB, Blue...  | 987   |
-|10|  All-New Fire HD 8 Tablet with Alexa, 8 HD Disp... | 883   |
+|2 | AmazonBasics AA Performance Alkaline Batteries...  | 3728  |                              
+|3 |Fire HD 8 Tablet with Alexa, 8 HD Display, 16 ...   | 2443  |                              
+|4 | All-New Fire HD 8 Tablet, 8 HD Display, Wi-Fi,...  | 2370  |                              
+|5 | Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16...  | 1986  |                              
+|6 | Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16...  | 1676  |                              
+|7 | Fire Kids Edition Tablet, 7 Display, Wi-Fi, 16...  | 1429  |                              
+|8 | Fire Tablet, 7 Display, Wi-Fi, 16 GB - Include...  | 1395  |                              
+|9 | Fire Tablet with Alexa, 7 Display, 16 GB, Blue...  | 987   |                              
+|10|  All-New Fire HD 8 Tablet with Alexa, 8 HD Disp... | 883   |                              
+
+![Alt Text](images/pr-t10.png)
+
 
 
 ### Highest Ratings by Customers  
 
-|Sr.| Ratings | Count  |
-|:-:|:-------:|:-----: |
-|1  |    5    | 23375  |
-|2  |    4    | 6856   |
-|3  |    3    | 1403   |
-|4  |    1    | 1028   |
-|5  |    2    | 670    |
+Count of products with highest rating are determined.
+Overall it is observed that most of the products got                                    
 
+<div align="center">
+  <table>
+    <tr>
+      <td><strong>Ratings Count Visualization</strong></td>
+    </tr>
+    <tr>
+      <td><img src="images/pr-ratingwtc.png" alt="Emotion" width="600"></td>   
+    </tr>
+  </table>  
+</div>  
+
+### Products Recommended by Customers  
+
+<div align="center">
+  <table>
+    <tr>
+      <td><strong>Ratings Count Visualization</strong></td>
+    </tr>
+    <tr>
+      <td><img src="images/sen-cutomerRecom.png" alt="Emotion" width="600"></td>   
+    </tr>
+  </table>  
+</div>
 ## Top Products Classification 
 
 ### Product Recommendation Classification  
