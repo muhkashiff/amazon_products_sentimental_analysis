@@ -105,6 +105,26 @@ Top 10 Products with Count:
 |3  |    3    | 1403   |
 |4  |    1    | 1028   |
 |5  |    2    | 670    |
+
+## Top Products Classification 
+
+### Product Recommendation Classification  
+![Alt Text](images/pr-recommendct.png)  
+
+### Product Recommendation Subjectivity Classification  
+![Alt Text](images/pr-subjct.png)  
+
+
+### Product Recommendation Intensity Classification  
+![Alt Text](images/pr-intensityct.png) 
+
+### Entity Sentiments Classification
+![Alt Text](images/pr-entitysenct.png)  
+
+### Product Recommendation Sentiment Classification  
+![Alt Text](images/pr-featureScr.png) 
+
+
 ## Data Distribution
 <table>
   <tr>
