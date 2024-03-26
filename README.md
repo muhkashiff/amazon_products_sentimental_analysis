@@ -105,7 +105,27 @@ Top 10 Products with Count:
 |3  |    3    | 1403   |
 |4  |    1    | 1028   |
 |5  |    2    | 670    |
-
+## Data Distribution
+<table>
+  <tr>
+    <td>Pie Chart Emotion</td>
+    <td>Pie Chart Intensity</td>
+    <td>Pie Chart Sentiment Entity</td>
+  </tr>
+  <tr>
+    <td><img src="images/sen-emotion.png" alt="Emotion" width="350"></td>
+    <td><img src="images/sen-intentsity.png" alt="Intensity" width="350"></td>
+    <td><img src="images/sen-entity.png" alt="Sentiment Entity" width="350"></td>
+  </tr>
+  <tr>
+    <td>Pie Chart Sentiment</td>
+    <td>Pie Chart Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/sen-pie.png" alt="Sentiment" width="350"></td>
+    <td><img src="images/sen-subj.png" alt="Subjectivity" width="350"></td>
+  </tr>
+</table>
 
 # Statistical Analysis  
 
@@ -120,7 +140,7 @@ Top 10 Products with Count:
 |        75%         |   0.562500        |
 |         max        |   1.000000        |           
 
-![Alt Text](images/histo.png)  
+![Alt Text](images/histogram.png)  
 
 # Products Recommendation  
 
