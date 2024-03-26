@@ -79,9 +79,9 @@ df_filled_unsupervised['sentiment_label'] = pd.cut(df_filled_unsupervised['senti
 print(df_filled_unsupervised[['reviews.text', 'sentiment', 'sentiment_label']])
 ```
 ### Top 10 Best Seller Products  
-
-
 Top 10 Products with Count:
+<div align="center">  
+  
 |Sr|                Name                                | Count |                  
 |:-|:--------------------------------------------------:|:-----:|
 |1 | AmazonBasics AAA Performance Alkaline Batterie...  | 8343  |
@@ -94,6 +94,7 @@ Top 10 Products with Count:
 |8 | Fire Tablet, 7 Display, Wi-Fi, 16 GB - Include...  | 1395  |                              
 |9 | Fire Tablet with Alexa, 7 Display, 16 GB, Blue...  | 987   |                              
 |10|  All-New Fire HD 8 Tablet with Alexa, 8 HD Disp... | 883   |                              
+</div>  
 
 ![Alt Text](images/pr-t10.png)
 
@@ -459,4 +460,4 @@ import spacy
 Muhammad Kashif 
 
 ## References
-[1] [Amazon Products data]([(https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products?resource=download])
+[1] [Amazon Products data]([https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products?resource=download])
