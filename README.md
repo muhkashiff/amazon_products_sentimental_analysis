@@ -285,6 +285,69 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 ```
 # Models Comparison  
 
+## Classification Reports Comparison
+
+### Naive Bayes Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Naive Bayes</td>
+    <td>Count Vectorization Naive Bayes</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-nb.PNG" alt="Tfnb" width="500"></td>
+    <td><img src="images/ct-clf-npb.PNG" alt="Tcnb" width="500"></td>    
+  </tr>
+</table>  
+
+### Gradient Boost Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Gradient Boost</td>
+    <td>Count Vectorization Gradient Boost</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-grd.PNG" alt="Tfgradient" width="500"></td>
+    <td><img src="images/ct-clf-grdb.PNG" alt="Tcgradient" width="500"></td>    
+  </tr>
+</table>  
+
+### Random Forest Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Random Forest</td>
+    <td>Count Vectorization Random Forest</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-rfs.PNG" alt="Tfrf" width="500"></td>
+    <td><img src="images/ct-clf-rfs.PNG" alt="Tcrf" width="500"></td>    
+  </tr>
+</table>  
+
+### SVM Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion SVM</td>
+    <td>Count Vectorization SVM</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-svm.PNG" alt="Tfsvm" width="500"></td>
+    <td><img src="images/ct-cl-svm.PNG" alt="Tcsvm" width="500"></td>    
+  </tr>
+</table>  
+
+### Logistic Regression Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Logistic Regression</td>
+    <td>Count Vectorization Logistic Regression</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-rgr.PNG" alt="Tfrgr" width="500"></td>
+    <td><img src="images/ct-clf-lgr.PNG" alt="Tcrgr" width="500"></td>    
+  </tr>
+</table> 
+
+
 ## Models Precision Comparison
 <table>
   <tr>
