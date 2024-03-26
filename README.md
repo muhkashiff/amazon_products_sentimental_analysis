@@ -106,6 +106,130 @@ Top 10 Products with Count:
 |4  |    1    | 1028   |
 |5  |    2    | 670    |
 
+## Top Products Classification 
+
+### Product Recommendation Classification  
+![Alt Text](images/pr-recommendct.png)  
+
+### Product Recommendation Subjectivity Classification  
+![Alt Text](images/pr-subjct.png)  
+
+
+### Product Recommendation Intensity Classification  
+![Alt Text](images/pr-intensityct.png) 
+
+### Entity Sentiments Classification
+![Alt Text](images/pr-entitysenct.png)  
+
+### Product Recommendation Sentiment Classification  
+![Alt Text](images/pr-featureScr.png) 
+
+
+## Data Distribution
+<table>
+  <tr>
+    <td>Pie Chart Emotion</td>
+    <td>Pie Chart Intensity</td>
+    <td>Pie Chart Sentiment Entity</td>
+  </tr>
+  <tr>
+    <td><img src="images/sen-emotion.png" alt="Emotion" width="350"></td>
+    <td><img src="images/sen-intentsity.png" alt="Intensity" width="350"></td>
+    <td><img src="images/sen-entity.png" alt="Sentiment Entity" width="350"></td>
+  </tr>
+  <tr>
+    <td>Pie Chart Sentiment</td>
+    <td>Pie Chart Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/sen-pie.png" alt="Sentiment" width="350"></td>
+    <td><img src="images/sen-subj.png" alt="Subjectivity" width="350"></td>
+  </tr>
+</table>  
+
+## Moving Average Plot of Sentiments Vs Recommendation
+<table>
+  <tr>
+    <td>Recommendations Vs Emotion</td>
+    <td>Recommendations Vs Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ma-rec-emt.png" alt="Emotion" width="500"></td>
+    <td><img src="images/ma-rec-subj.png" alt="Subjectivity" width="500"></td>
+    
+  </tr>
+  <tr>
+    <td>Recommendations Vs Sentiment</td>
+    <td>Recommendations Vs Intensity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ma-rec-sent.png" alt="Sentiment" width="500"></td>
+    <td><img src="images/ma-rec-int.png" alt="Intensity" width="500"></td>
+  </tr>
+</table>  
+
+## Moving Average Plot of Sentiments Vs Rating
+<table>
+  <tr>
+    <td>Rating Vs Emotion</td>
+    <td>Rating Vs Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ma-ra-emt.png" alt="Emotion" width="500"></td>
+    <td><img src="images/ma-ra-subj.png" alt="Subjectivity" width="500"></td>
+    
+  </tr>
+  <tr>
+    <td>Rating Vs Sentiment</td>
+    <td>Rating Vs Intensity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ma-ra-sent.png" alt="Sentiment" width="500"></td>
+    <td><img src="images/ma-ra-int.png" alt="Intensity" width="500"></td>
+  </tr>
+</table> 
+
+## Ratings Vs Sentiment features Heatmaps
+<table>
+  <tr>
+    <td>Rating Vs Emotion</td>
+    <td>Rating Vs Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ht-ra-emt.png" alt="Emotion" width="450"></td>
+    <td><img src="images/ht-ra-subj.png" alt="Subjectivity" width="450"></td>
+    
+  </tr>
+  <tr>
+    <td>Rating Vs Sentiment</td>
+    <td>Rating Vs Intensity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ht-ra-sent.png" alt="Sentiment" width="450"></td>
+    <td><img src="images/ht-ra-int.png" alt="Intensity" width="450"></td>
+  </tr>
+</table>  
+
+## Recommendation Vs Sentiment features Heatmaps
+<table>
+  <tr>
+    <td>Recommendations Vs Emotion</td>
+    <td>Recommendations Vs Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ht-rec-emt.png" alt="Emotion" width="450"></td>
+    <td><img src="images/ht-rec-subj.png" alt="Subjectivity" width="450"></td>
+    
+  </tr>
+  <tr>
+    <td>Recommendations Vs Sentiment</td>
+    <td>Recommendations Vs Intensity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ht-rec-sent.png" alt="Sentiment" width="450"></td>
+    <td><img src="images/ht-rec-int.png" alt="Intensity" width="450"></td>
+  </tr>
+</table>  
 
 # Statistical Analysis  
 
@@ -120,7 +244,7 @@ Top 10 Products with Count:
 |        75%         |   0.562500        |
 |         max        |   1.000000        |           
 
-![Alt Text](images/histo.png)  
+![Alt Text](images/histogram.png)  
 
 # Products Recommendation  
 
@@ -160,6 +284,109 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 
 ```
 # Models Comparison  
+
+## Classification Reports Comparison
+
+### Naive Bayes Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Naive Bayes</td>
+    <td>Count Vectorization Naive Bayes</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-nb.PNG" alt="Tfnb" width="500"></td>
+    <td><img src="images/ct-clf-npb.PNG" alt="Tcnb" width="500"></td>    
+  </tr>
+</table>  
+
+### Gradient Boost Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Gradient Boost</td>
+    <td>Count Vectorization Gradient Boost</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-grd.PNG" alt="Tfgradient" width="500"></td>
+    <td><img src="images/ct-clf-grdb.PNG" alt="Tcgradient" width="500"></td>    
+  </tr>
+</table>  
+
+### Random Forest Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Random Forest</td>
+    <td>Count Vectorization Random Forest</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-rfs.PNG" alt="Tfrf" width="500"></td>
+    <td><img src="images/ct-clf-rfs.PNG" alt="Tcrf" width="500"></td>    
+  </tr>
+</table>  
+
+### SVM Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion SVM</td>
+    <td>Count Vectorization SVM</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-svm.PNG" alt="Tfsvm" width="500"></td>
+    <td><img src="images/ct-cl-svm.PNG" alt="Tcsvm" width="500"></td>    
+  </tr>
+</table>  
+
+### Logistic Regression Classification Reports  
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Logistic Regression</td>
+    <td>Count Vectorization Logistic Regression</td>
+  </tr>
+  <tr>
+    <td><img src="images/cf-clf-rgr.PNG" alt="Tfrgr" width="500"></td>
+    <td><img src="images/ct-clf-lgr.PNG" alt="Tcrgr" width="500"></td>    
+  </tr>
+</table> 
+
+
+## Models Precision Comparison
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Precision</td>
+    <td>Count Vectorization Precision</td>
+  </tr>
+  <tr>
+    <td><img src="images/tf-prec.png" alt="TfPrecision" width="500"></td>
+    <td><img src="images/c-prec.png" alt="TcPrecision" width="500"></td>    
+  </tr>
+</table>  
+
+## Models F1 Score Comparison
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion F1 Score</td>
+    <td>Count Vectorization F1 Score</td>
+  </tr>
+  <tr>
+    <td><img src="images/tf-f1.png" alt="TfF1" width="500"></td>
+    <td><img src="images/c-f1.png" alt="TcF1" width="500"></td>    
+  </tr>
+</table>  
+
+## Models Recall Score Comparison
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Recall Score</td>
+    <td>Count Vectorization Recall Score</td>
+  </tr>
+  <tr>
+    <td><img src="images/tf-recall.png" alt="TfRecall" width="500"></td>
+    <td><img src="images/c-recall.png" alt="TcRecall" width="500"></td>    
+  </tr>
+</table>
+
+
+## Models Accuracy Comparison
+
 ![Alt Text](images/accuracy-compar.png)
 
 
@@ -196,6 +423,8 @@ from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.feature_extraction.text import TfidfVectorizer
+import nltk
+import spacy
 
 ```
 ## Future Work
