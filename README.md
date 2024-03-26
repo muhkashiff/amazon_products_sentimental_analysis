@@ -96,8 +96,7 @@ Top 10 Products with Count:
 |10|  All-New Fire HD 8 Tablet with Alexa, 8 HD Disp... | 883   |                              
 </div>  
 
-![Alt Text](images/pr-t10.png)
-
+![Alt Text](images/pr-t10.png)  
 
 
 ### Highest Ratings by Customers  
@@ -254,7 +253,8 @@ Overall it is observed that most of the products got
 </table>  
 
 # Statistical Analysis  
-
+<div align="center">  
+  
 | Feature            | Result (values)   |
 | :----------------- | :----------------: 
 |        count       |   33332.000000    |
@@ -266,8 +266,15 @@ Overall it is observed that most of the products got
 |        75%         |   0.562500        |
 |         max        |   1.000000        |           
 
+</div>  
+
+## Histogram
 ![Alt Text](images/histogram.png)  
 
+
+## Scatter Plot
+
+![Alt Text](images/sen-regression.png)
 # Products Recommendation  
 
 ``` bash
