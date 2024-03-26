@@ -125,7 +125,91 @@ Top 10 Products with Count:
     <td><img src="images/sen-pie.png" alt="Sentiment" width="350"></td>
     <td><img src="images/sen-subj.png" alt="Subjectivity" width="350"></td>
   </tr>
-</table>
+</table>  
+
+## Moving Average Plot of Sentiments Vs Recommendation
+<table>
+  <tr>
+    <td>Recommendations Vs Emotion</td>
+    <td>Recommendations Vs Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ma-rec-emt.png" alt="Emotion" width="500"></td>
+    <td><img src="images/ma-rec-subj.png" alt="Subjectivity" width="500"></td>
+    
+  </tr>
+  <tr>
+    <td>Recommendations Vs Sentiment</td>
+    <td>Recommendations Vs Intensity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ma-rec-sent.png" alt="Sentiment" width="500"></td>
+    <td><img src="images/ma-rec-int.png" alt="Intensity" width="500"></td>
+  </tr>
+</table>  
+
+## Moving Average Plot of Sentiments Vs Rating
+<table>
+  <tr>
+    <td>Rating Vs Emotion</td>
+    <td>Rating Vs Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ma-ra-emt.png" alt="Emotion" width="500"></td>
+    <td><img src="images/ma-ra-subj.png" alt="Subjectivity" width="500"></td>
+    
+  </tr>
+  <tr>
+    <td>Rating Vs Sentiment</td>
+    <td>Rating Vs Intensity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ma-ra-sent.png" alt="Sentiment" width="500"></td>
+    <td><img src="images/ma-ra-int.png" alt="Intensity" width="500"></td>
+  </tr>
+</table> 
+
+## Ratings Vs Sentiment features Heatmaps
+<table>
+  <tr>
+    <td>Rating Vs Emotion</td>
+    <td>Rating Vs Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ht-ra-emt.png" alt="Emotion" width="450"></td>
+    <td><img src="images/ht-ra-subj.png" alt="Subjectivity" width="450"></td>
+    
+  </tr>
+  <tr>
+    <td>Rating Vs Sentiment</td>
+    <td>Rating Vs Intensity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ht-ra-sent.png" alt="Sentiment" width="450"></td>
+    <td><img src="images/ht-ra-int.png" alt="Intensity" width="450"></td>
+  </tr>
+</table>  
+
+## Recommendation Vs Sentiment features Heatmaps
+<table>
+  <tr>
+    <td>Recommendations Vs Emotion</td>
+    <td>Recommendations Vs Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ht-rec-emt.png" alt="Emotion" width="450"></td>
+    <td><img src="images/ht-rec-subj.png" alt="Subjectivity" width="450"></td>
+    
+  </tr>
+  <tr>
+    <td>Recommendations Vs Sentiment</td>
+    <td>Recommendations Vs Intensity</td>
+  </tr>
+  <tr>
+    <td><img src="images/ht-rec-sent.png" alt="Sentiment" width="450"></td>
+    <td><img src="images/ht-rec-int.png" alt="Intensity" width="450"></td>
+  </tr>
+</table>  
 
 # Statistical Analysis  
 
