@@ -264,6 +264,46 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 
 ```
 # Models Comparison  
+
+## Models Precision Comparison
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Precision</td>
+    <td>Count Vectorization Precision</td>
+  </tr>
+  <tr>
+    <td><img src="images/tf-prec.png" alt="TfPrecision" width="500"></td>
+    <td><img src="images/c-prec.png" alt="TcPrecision" width="500"></td>    
+  </tr>
+</table>  
+
+## Models F1 Score Comparison
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion F1 Score</td>
+    <td>Count Vectorization F1 Score</td>
+  </tr>
+  <tr>
+    <td><img src="images/tf-f1.png" alt="TfF1" width="500"></td>
+    <td><img src="images/c-f1.png" alt="TcF1" width="500"></td>    
+  </tr>
+</table>  
+
+## Models Recall Score Comparison
+<table>
+  <tr>
+    <td>Tfidf Vectoriztaion Recall Score</td>
+    <td>Count Vectorization Recall Score</td>
+  </tr>
+  <tr>
+    <td><img src="images/tf-recall.png" alt="TfRecall" width="500"></td>
+    <td><img src="images/c-recall.png" alt="TcRecall" width="500"></td>    
+  </tr>
+</table>
+
+
+## Models Accuracy Comparison
+
 ![Alt Text](images/accuracy-compar.png)
 
 
@@ -300,6 +340,8 @@ from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.feature_extraction.text import TfidfVectorizer
+import nltk
+import spacy
 
 ```
 ## Future Work
