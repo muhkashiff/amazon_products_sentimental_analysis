@@ -252,6 +252,27 @@ Overall it is observed that most of the products got
   </tr>
 </table>  
 
+## Correlation Analysis
+<table>
+  <tr>
+    <td>Correlation Sentiment Vs Intensity</td>
+    <td>Correlation Sentiment Vs Subjectivity</td>
+    <td>Correlation Subjectivity Vs Intensity</td>
+  </tr>
+  <tr>
+    <td><img src="images/cor-senint.png" alt="SenvsInt" width="450"></td>
+    <td><img src="images/cor-sensbj.png" alt="SenVsSubj" width="450"></td>
+    <td><img src="images/cor-intsbj.png" alt="SubjInt" width="450"></td>
+  </tr>
+</table>
+
+## Time Series Analysis
+![Alt Text](images/date-time-review.png)
+
+### Sentiment counts
+![Alt Text](images/tm-senti.png)
+
+
 # Statistical Analysis  
 <div align="center">  
   
@@ -275,6 +296,21 @@ Overall it is observed that most of the products got
 ## Scatter Plot
 
 ![Alt Text](images/sen-regression.png)
+
+## Outliers analysis
+<table>
+  <tr>
+    <td>Sentiments Score Outliers</td>
+    <td>Intensity Score Outliers</td>
+    <td>Subjectivity Score Outliers</td>
+  </tr>
+  <tr>
+    <td><img src="images/bx-sent.png" alt="sentiment" width="450"></td>
+    <td><img src="images/bx-int.png" alt="intensity" width="450"></td>
+    <td><img src="images/bx-subj.png" alt="subjectivity" width="450"></td>
+  </tr>
+</table>
+
 # Products Recommendation  
 
 ``` bash
