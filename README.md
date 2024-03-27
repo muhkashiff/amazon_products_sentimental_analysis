@@ -436,12 +436,18 @@ Below is classification of recommended products based on sentiments.
   <tr>
     <td>Sentiments Score Outliers</td>
     <td>Intensity Score Outliers</td>
+  </tr>
+  <tr>
+    <td><img src="images/bx-sent.png" alt="sentiment" width="500"></td>
+    <td><img src="images/bx-int.png" alt="intensity" width="500"></td>
+  </tr>
+   <tr>
+    <td>Emotion Score Outliers</td>
     <td>Subjectivity Score Outliers</td>
   </tr>
   <tr>
-    <td><img src="images/bx-sent.png" alt="sentiment" width="450"></td>
-    <td><img src="images/bx-int.png" alt="intensity" width="450"></td>
-    <td><img src="images/bx-subj.png" alt="subjectivity" width="450"></td>
+    <td><img src="images/bx-emot.png" alt="emotion" width="500"></td>
+    <td><img src="images/bx-subj.png" alt="subjectivity" width="500"></td>
   </tr>
 </table>
 
