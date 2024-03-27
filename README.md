@@ -2,7 +2,7 @@
 Sentiment analysis of amazon products and products recommendation
 
 ## Project Summary
-
+Our project focuses on uncovering the sentiments embedded within customer reviews, utilizing innovative approaches to conduct sentiment analysis. By employing various methodologies, we aim to delve deep into the emotional undercurrents of these reviews. Extracted sentiments serve as pivotal indicators, guiding us in evaluating the credibility of reviews through sophisticated polarity scoring mechanisms. Ultimately, our endeavor seeks to enrich understanding and enhance decision-making processes in the realm of customer feedback analysis.  
 
 ## Table of Contents
 
