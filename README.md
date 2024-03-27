@@ -25,11 +25,13 @@ Sentiment analysis of amazon products and products recommendation
 
 # ETL
 ## Data Source
-In this project data is obtained from Home credit default risk at Kaggle.com 
+In this project data is obtained from datafinit consumer reviews of amazon products at Kaggle.com 
+
 ## Data Sets
+in this project source files were renamed as amazon1.csv and amazon2.csv.
 
 ## Data Cleaning
-
+Data cleaning was initiated by cleaning date and time columns(dateAdded, dateUpdated, reviews.date, reviews.dateSeen)  which had both values in one column so date and time was splitted into different columns respectively by adding _date and _time at the of main column name for better clarity. After the splitting, null values were determined and mainly three columns (reviews.dateAdded, reviews.id) showed most null values which were deleted. Then missing values of categorical values are filled using clustering predictive method. Details of this method is available in repository [Home Credit Default Risk Categorical Data Cleaning]([https://github.com/muhkashiff/Extract_transform_load_EDA_Home_credit]) .
 ## Data Loading
 
 
