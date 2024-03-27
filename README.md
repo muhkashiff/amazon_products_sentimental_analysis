@@ -219,7 +219,8 @@ Top 10 reviewed products are below in the table along with number of reviews eac
 |10|  All-New Fire HD 8 Tablet with Alexa, 8 HD Disp... | 883   |                              
 </div>  
 
- 
+### Top 10 Reviewed Categories  
+![Alt text](images/sen-category.png)
 
 
 ### Highest Rated Products 
@@ -258,20 +259,22 @@ Amazon products with recommendation are shown below.
 ## Sentiments Based Recommended Products 
 Below is classification of recommended products based on sentiments.
 
-### Subjectivity Product Recommendation  
+### Sentiment Product Recommendation  
+![Alt Text](images/pr-rec-sent.png)
 
 ### Subjectivity Product Recommendation    
-![Alt Text](images/pr-subjct.png)  
+![Alt Text](images/pr-rec-subj.png)  
 
-### Emotion Product Recommendation  
+### Emotion Product Recommendation 
 
+![Alt Text](images/pr-rec-emot.png) 
 ### Intensity Product Recommendation  
 
-![Alt Text](images/pr-intensityct.png) 
+![Alt Text](images/pr-rec-int.png) 
 
 ### Entity Sentiments Products Recommendation  
 
-![Alt Text](images/pr-entitysenct.png)  
+![Alt Text](images/pr-rec-entity.png)  
 
 ### Overall Sentiments Product Recommendation  
 
