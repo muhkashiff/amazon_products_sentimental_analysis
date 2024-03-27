@@ -5,14 +5,10 @@ Sentiment analysis of amazon products and products recommendation
 
 
 ## Table of Contents
-- [ETL](#ETL)
-  - [Data Source](#data-source)
-  - [Data Sets](#data-sets)
-  - [Data Cleaning](#data-cleaning)
-  - [Data Loading](#data-loading)
-  - [Data Segregation](#data-segregation)
-  - [Data Processing](#data-processing)
-  - [Data Prediction](#data-prediction)
+
+- [Data Source](#data-source)
+- [Data Sets](#data-sets)
+- [Data Cleaning](#data-cleaning)
 - [Sentiment Analysis](#sentiment-analysis)
 - [Statitical Analysis](#statitical-analysis)
 - [Models Comparison](#models-comparison) 
@@ -23,7 +19,6 @@ Sentiment analysis of amazon products and products recommendation
 - [Author](#author)
 - [References](#references)
 
-# ETL
 ## Data Source
 In this project data is obtained from datafinit consumer reviews of amazon products at Kaggle.com 
 
@@ -31,44 +26,21 @@ In this project data is obtained from datafinit consumer reviews of amazon produ
 in this project source files were renamed as amazon1.csv and amazon2.csv.
 
 ## Data Cleaning
-Data cleaning was initiated by cleaning date and time columns(dateAdded, dateUpdated, reviews.date, reviews.dateSeen)  which had both values in one column so date and time was splitted into different columns respectively by adding _date and _time at the of main column name for better clarity. After the splitting, null values were determined and mainly three columns (reviews.dateAdded, reviews.id) showed most null values which were deleted. Then missing values of categorical values are filled using clustering predictive method. Details of this method is available in repository [Home Credit Default Risk Categorical Data Cleaning]([https://github.com/muhkashiff/Extract_transform_load_EDA_Home_credit]) .
-## Data Loading
-
-
-``` bash
-
-```
-
-
-``` bash
-
-```
-## Data Segregation
-
-``` bash
-
-```
-## Data Processing
-
-
-``` bash
-
-```
-
-``` bash
-
-
-```
-
-## Data Prediction  
-
-
-
-```
-
-```
+Data cleaning was initiated by cleaning date and time columns(dateAdded, dateUpdated, reviews.date, reviews.dateSeen)  which had both values in one column so date and time was splitted into different columns respectively by adding _date and _time at the of main column name for better clarity. After the splitting, null values were determined and mainly three columns (reviews.dateAdded, reviews.id) showed most null values which were deleted. Then missing values of categorical values are filled using clustering predictive method. Details of this method is available in repository [Home Credit Default Risk Categorical Data Cleaning](https://github.com/muhkashiff/Extract_transform_load_EDA_Home_credit) . Cleaned data is then used for performing sentiment analysis.
 
 # Sentiment Analysis  
+Sentiment analysis, also known as opinion mining, is a natural language processing (NLP) technique used to determine the sentiment or emotional tone expressed in a piece of text. The goal of sentiment analysis is to automatically identify and extract subjective information, such as opinions, attitudes, emotions, and feelings, from textual data.  
+
+Sentiment analysis can classify text into different categories, such as positive, negative, or neutral, based on the underlying sentiment conveyed by the words and phrases used in the text. It can be applied to various types of textual data, including product reviews, social media posts, customer feedback, news articles, and more. For the sake of project, amazon customer reviews and tested to determine the sentiments.  
+In this project reviews were analysed by using below methods to determine type and credibility of the reviews.  
+1. Determing Sentiment   
+2. Determing Subjectivity  
+3. Determing Emotion  
+4. Determining Intensity  
+5. Determining Sentiment Entity
+
+## Determining Sentiment  
+Sentiment score is determined and based on score positive , negative, and neutral label are generated in sentiment_label column.  
 Below is code for carrying out sentiment analysis using TextBlob to score the reviews and then bin into three cateogries e.g negative, neutral and positive.
 ``` bash
 # Create a new column 'sentiment' to store the sentiment scores
@@ -79,6 +51,136 @@ df_filled_unsupervised['sentiment_label'] = pd.cut(df_filled_unsupervised['senti
 
 # Display the DataFrame with sentiment scores and labels
 print(df_filled_unsupervised[['reviews.text', 'sentiment', 'sentiment_label']])
+```
+## Determining Subjectivity  
+In the subjectivity, it is determined if the reviews are subjective or objective. Although for better classification reviews are binned into five categories (Very Objective, Objective, Neutral, Subjective, Very Subjective). Subjectivity score and Label are stored in different columns. code for determining subjectivity is below.  
+``` bash
+# Function to calculate subjectivity score
+def calculate_subjectivity(text):
+    blob = TextBlob(text)
+    return blob.sentiment.subjectivity
+
+# Apply function to 'reviews.text' column and store results in new column 'subjectivity_score'
+sentiment_df['subjectivity_score'] = sentiment_df['reviews.text'].apply(calculate_subjectivity)
+# Define bins
+bins = [0, 0.2, 0.4, 0.6, 0.8, 1.0]  
+
+# Create labels for bins
+labels = ['Very Objective', 'Objective', 'Neutral', 'Subjective', 'Very Subjective']
+
+# Bin the subjectivity scores and create a new column 'binned_subjectivity'
+sentiment_df['binned_subjectivity'] = pd.cut(sentiment_df['subjectivity_score'], bins=bins, labels=labels)
+
+# Display DataFrame with new column
+print(sentiment_df)  
+```
+## Determining Emotion  
+Emotion is determined and stored into four categories joy, Sadness, Anger, Neutral. below is code snippet.  
+``` bash
+# Function to perform emotion analysis and categorize into bins
+def analyze_emotion(text):
+    # Analyze sentiment using TextBlob
+    blob = TextBlob(text)
+    # Get sentiment polarity
+    polarity = blob.sentiment.polarity
+
+    # Categorize into bins based on polarity
+    if polarity > 0.3:
+        return 'Joy'
+    elif polarity < -0.3:
+        return 'Sadness'
+    elif polarity < 0:
+        return 'Anger'
+    else:
+        return 'Neutral'
+
+# Apply emotion analysis function to 'reviews.text' column and store results in new column 'emotion'
+sentiment_df['emotion'] = sentiment_df['reviews.text'].apply(analyze_emotion)
+
+# Display DataFrame with new column
+print(sentiment_df)
+```
+## Determining Intensity  
+
+Intensity is determined using sentiment polarity score and then scores are binned into five categories;  
+1. Very Low Intensity
+2. Low Intensity
+3. Moderate Intensity
+4. High Intensity
+5. Very high Intensity
+``` bash
+# Function to perform intensity analysis
+def analyze_intensity(text):
+    # Analyze sentiment using TextBlob
+    blob = TextBlob(text)
+    # Get sentiment polarity
+    polarity = blob.sentiment.polarity
+
+    # Calculate intensity as the absolute value of polarity
+    intensity = abs(polarity)
+
+    return intensity
+
+# Apply intensity analysis function to 'reviews.text' column and store results in new column 'intensity'
+sentiment_df['intensity'] = sentiment_df['reviews.text'].apply(analyze_intensity)
+# Define bins
+bins = [0, 0.2, 0.4, 0.6, 0.8, 1.0]  
+
+# Create labels for bins
+labels = ['Very Low Intensity', 'Low Intensity', 'Moderate Intensity', 'High Intensity', 'Very High Intensity']
+
+# Bin the intensity scores and create a new column 'binned_intensity'
+sentiment_df['intensity_level'] = pd.cut(sentiment_df['intensity'], bins=bins, labels=labels)
+
+# Display DataFrame with new column
+print(sentiment_df)
+``` 
+
+##  Determing Entities Sentiments  
+
+Entities sentiment score and key words are determined. For sake of project only keywords with highest score are kept. Since the focus of project is to determine polarity of the reviews.  
+``` bash
+# Load SpaCy's English language model
+nlp = spacy.load("en_core_web_sm")
+
+# Function to perform entity sentiment analysis
+def analyze_entity_sentiment(text):
+    # Process the text with SpaCy
+    doc = nlp(text)
+
+    # Initialize variables to store the entity with the highest sentiment score
+    highest_entity = None
+    highest_score = float('-inf')  # Initialize with negative infinity
+
+    # Iterate over each named entity in the text
+    for ent in doc.ents:
+        # Analyze sentiment using TextBlob or any other sentiment analysis tool
+        sentiment_score = TextBlob(ent.text).sentiment.polarity
+        # Check if the entity and sentiment score are not None
+        if ent.text and sentiment_score is not None:
+            # Check if the current entity has a higher sentiment score than the previous highest
+            if abs(sentiment_score) > highest_score:
+                highest_entity = ent.text
+                highest_score = abs(sentiment_score)
+
+    # Return the entity with the highest sentiment score
+    return highest_entity
+
+# Function to perform binning based on sentiment score
+def bin_sentiment(score):
+    if score > 0.3:
+        return 'Positive'
+    elif score < -0.3:
+        return 'Negative'
+    else:
+        return 'Neutral'
+
+# Apply entity sentiment analysis function to each row of the DataFrame
+sentiment_df['highest_sentiment_entity'] = sentiment_df['reviews.text'].apply(analyze_entity_sentiment)
+
+# Apply binning to sentiment scores of entities
+sentiment_df['entity_sentiment_level'] = sentiment_df['highest_sentiment_entity'].apply(lambda x: bin_sentiment(TextBlob(x).sentiment.polarity) if x else None)
+
 ```
 ### Top 10 Best Seller Products  
 Top 10 Products with Count:
@@ -505,4 +607,4 @@ import spacy
 Muhammad Kashif 
 
 ## References
-[1] [Amazon Products data]([https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products?resource=download])
+[1] [Amazon Products data](https://www.kaggle.com/datasets/datafiniti/consumer-reviews-of-amazon-products?resource=download)
