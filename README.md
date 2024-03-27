@@ -10,6 +10,14 @@ Our project focuses on uncovering the sentiments embedded within customer review
 - [Data Sets](#data-sets)
 - [Data Cleaning](#data-cleaning)
 - [Sentiment Analysis](#sentiment-analysis)
+  - [Determing Sentiment](#determining-sentiment)   
+  - [Determining Subjectivity](#determininig-subjectivity)
+  - [Determining Emotion](#determining-emotion) 
+  - [Determining Intensity](#determininig-intensity)
+  - [Determininig Entities Sentiment](#determining-entities-sentiment)
+- [Product Sentiment Analysis](#product-sentiment-analysis)
+  - [Top 10 Reviewed Products](#top-10-reviewed-products)
+  - [Highest Rated Products](#highest-rated-products)  
 - [Statitical Analysis](#statitical-analysis)
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
@@ -182,8 +190,11 @@ sentiment_df['highest_sentiment_entity'] = sentiment_df['reviews.text'].apply(an
 sentiment_df['entity_sentiment_level'] = sentiment_df['highest_sentiment_entity'].apply(lambda x: bin_sentiment(TextBlob(x).sentiment.polarity) if x else None)
 
 ```
-### Top 10 Best Seller Products  
-Top 10 Products with Count:
+## Products Sentiment Analysis
+In this analysis products that got most reviews and type of reviews are analysed.  
+
+### Top 10 Reviewed Products  
+Top 10 reviewed products are below in the table along with number of reviews each product got :
 <div align="center">  
   
 |Sr|                Name                                | Count |                  
@@ -203,7 +214,7 @@ Top 10 Products with Count:
 ![Alt Text](images/pr-t10.png)  
 
 
-### Highest Ratings by Customers  
+### Highest Rated Products 
 
 Count of products with highest rating are determined.
 Overall it is observed that most of the products got                                    
