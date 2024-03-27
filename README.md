@@ -17,8 +17,16 @@ Our project focuses on uncovering the sentiments embedded within customer review
   - [Determininig Entities Sentiment](#determining-entities-sentiment)
 - [Product Sentiment Analysis](#product-sentiment-analysis)
   - [Top 10 Reviewed Products](#top-10-reviewed-products)
-  - [Highest Rated Products](#highest-rated-products)  
-- [Statitical Analysis](#statitical-analysis)
+  - [Highest Rated Products](#highest-rated-products)
+  - [Most Recommended Products](#most-recommended-products)
+- [Sentiments Based Recommended Products](#sentiments-based-recommended-products)
+  - [Sentiment Product Recommendation](#sentiment-product-recommendation)   
+  - [Subjectivity Product Recommendation](#subjectivity-product-recommendation)
+  - [Emotion Product Recommendation](#emotion-product-recommendation)    
+  - [Intensity Product Recommendation](#intensity-product-recommendation)  
+  - [Entity Sentiments Products Recommendation](#entity-sentiments-products-recommendation)  
+  - [Overall Sentiments Product Recommendation](#overall-sentiments-product-recommendation)  
+- [Statitical Analysis](#statitical-analysis)  
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
 - [Dependencies](#dependencies)
@@ -211,13 +219,12 @@ Top 10 reviewed products are below in the table along with number of reviews eac
 |10|  All-New Fire HD 8 Tablet with Alexa, 8 HD Disp... | 883   |                              
 </div>  
 
-![Alt Text](images/pr-t10.png)  
+ 
 
 
 ### Highest Rated Products 
 
-Count of products with highest rating are determined.
-Overall it is observed that most of the products got                                    
+Ratings count visualization shows that most of the products got top ratings of 5 and 4. top 10 highest rated products visualization shows products with most ratings. 
 
 <div align="center">
   <table>
@@ -230,36 +237,45 @@ Overall it is observed that most of the products got
   </table>  
 </div>  
 
-### Products Recommended by Customers  
+![Alt Text](images/pr-t10.png)  
 
+### Most Recommended Products 
+Recommendation count visualization shows 31199 products are recommended by customers and 2133 products are not recommended by customers. Recommended products make 93% of total prodcuts reviewed and only 7% products got no recommendation.
 <div align="center">
   <table>
     <tr>
-      <td><strong>Ratings Count Visualization</strong></td>
+      <td><strong>Recommendation Count Visualization</strong></td>
     </tr>
     <tr>
       <td><img src="images/sen-cutomerRecom.png" alt="Emotion" width="600"></td>   
     </tr>
   </table>  
-</div>
-## Top Products Classification 
+</div>  
+Amazon products with recommendation are shown below.
 
-### Product Recommendation Classification  
 ![Alt Text](images/pr-recommendct.png)  
 
-### Product Recommendation Subjectivity Classification  
+## Sentiments Based Recommended Products 
+Below is classification of recommended products based on sentiments.
+
+### Subjectivity Product Recommendation  
+
+### Subjectivity Product Recommendation    
 ![Alt Text](images/pr-subjct.png)  
 
+### Emotion Product Recommendation  
 
-### Product Recommendation Intensity Classification  
+### Intensity Product Recommendation  
+
 ![Alt Text](images/pr-intensityct.png) 
 
-### Entity Sentiments Classification
+### Entity Sentiments Products Recommendation  
+
 ![Alt Text](images/pr-entitysenct.png)  
 
-### Product Recommendation Sentiment Classification  
-![Alt Text](images/pr-featureScr.png) 
+### Overall Sentiments Product Recommendation  
 
+![Alt Text](images/pr-featureScr.png)  
 
 ## Data Distribution
 <table>
