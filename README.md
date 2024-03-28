@@ -19,14 +19,15 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Top 10 Reviewed Products](#top-10-reviewed-products)
   - [Highest Rated Products](#highest-rated-products)
   - [Most Recommended Products](#most-recommended-products)
-  - [Categories Sentiment Score](#categories-sentiment-score)
 - [Amazon Products Sentiment Analysis](#amazon-products-sentiment-analysis)
+  - [Sentiments Data Distribution](#sentiments-data-distribution)
   - [Products Sentiments Score](#products-sentiments-score)   
   - [Products Subjectivity Score](#products-subjectivity-score)
   - [Products Emotion Score](#products-emotion-score)    
   - [Products Intensity Score](#products-intensity-score)  
   - [Products Entity Sentiments Score](#products-entity-sentiments-score)  
-  - [Products All Sentiments Aggregated Visualization](#products-all-sentiments-aggregated-visualization)  
+  - [Products All Sentiments Aggregated Visualization](#products-all-sentiments-aggregated-visualization)
+  - [Categories Sentiment Score](#categories-sentiment-score)
 - [Statitical Analysis](#statitical-analysis)  
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
@@ -257,11 +258,30 @@ Amazon products with recommendation are shown below.
 
 ![Alt Text](images/pr-recommendct.png)  
 
-### Categories Sentiment Score  
-![Alt Text](images/sen-category.png)  
-
 ## Amazon Products Sentiment Analysis 
 Below is classification of recommended products based on sentiments.
+
+### Sentiments Data Distribution
+<table>
+  <tr>
+    <td>Pie Chart Emotion</td>
+    <td>Pie Chart Intensity</td>
+    <td>Pie Chart Sentiment Entity</td>
+  </tr>
+  <tr>
+    <td><img src="images/sen-emotion.png" alt="Emotion" width="350"></td>
+    <td><img src="images/sen-intentsity.png" alt="Intensity" width="350"></td>
+    <td><img src="images/sen-entity.png" alt="Sentiment Entity" width="350"></td>
+  </tr>
+  <tr>
+    <td>Pie Chart Sentiment</td>
+    <td>Pie Chart Subjectivity</td>
+  </tr>
+  <tr>
+    <td><img src="images/sen-pie.png" alt="Sentiment" width="350"></td>
+    <td><img src="images/sen-subj.png" alt="Subjectivity" width="350"></td>
+  </tr>
+</table>  
 
 ### Products Sentiments Score  
 ![Alt Text](images/pr-rec-sent.png)
@@ -284,27 +304,10 @@ Below is classification of recommended products based on sentiments.
 
 ![Alt Text](images/pr-featureScr.png)  
 
-## Data Distribution
-<table>
-  <tr>
-    <td>Pie Chart Emotion</td>
-    <td>Pie Chart Intensity</td>
-    <td>Pie Chart Sentiment Entity</td>
-  </tr>
-  <tr>
-    <td><img src="images/sen-emotion.png" alt="Emotion" width="350"></td>
-    <td><img src="images/sen-intentsity.png" alt="Intensity" width="350"></td>
-    <td><img src="images/sen-entity.png" alt="Sentiment Entity" width="350"></td>
-  </tr>
-  <tr>
-    <td>Pie Chart Sentiment</td>
-    <td>Pie Chart Subjectivity</td>
-  </tr>
-  <tr>
-    <td><img src="images/sen-pie.png" alt="Sentiment" width="350"></td>
-    <td><img src="images/sen-subj.png" alt="Subjectivity" width="350"></td>
-  </tr>
-</table>  
+### Categories Sentiment Score  
+![Alt Text](images/sen-category.png)  
+
+
 
 ## Moving Average Plot of Sentiments Vs Recommendation
 <table>
