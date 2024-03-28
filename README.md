@@ -28,6 +28,9 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Products Entity Sentiments Score](#products-entity-sentiments-score)  
   - [Products All Sentiments Aggregated Visualization](#products-all-sentiments-aggregated-visualization)
   - [Categories Sentiment Score](#categories-sentiment-score)
+- [Time Series Analysis](#time-series-analysis)
+  - [Reviewed Products Count](#reviewed-products-count)
+  - [Reviewed Products Sentiments Count](#reviewed-products-sentiments-count)
 - [Statitical Analysis](#statitical-analysis)  
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
@@ -307,7 +310,13 @@ Below is classification of recommended products based on sentiments.
 ### Categories Sentiment Score  
 ![Alt Text](images/sen-category.png)  
 
+## Time Series Analysis
 
+### Reviewed Products Count
+![Alt Text](images/date-time-review.png)  
+
+### Reviewed Products Sentiments Count  
+![Alt Text](images/tm-senti.png)  
 
 ## Moving Average Plot of Sentiments Vs Recommendation
 <table>
@@ -407,11 +416,8 @@ Below is classification of recommended products based on sentiments.
   </tr>
 </table>
 
-## Time Series Analysis
-![Alt Text](images/date-time-review.png)
 
-### Sentiment counts
-![Alt Text](images/tm-senti.png)
+
 
 
 # Statistical Analysis  
