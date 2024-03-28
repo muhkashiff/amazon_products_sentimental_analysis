@@ -322,6 +322,29 @@ Below is classification of recommended products based on sentiments.
 ### Reviewed Products Sentiments Count  
 ![Alt Text](images/tm-senti.png)  
 
+## Entities Analysis
+
+### Entities Count
+Below is key word frequency (count). 
+
+| Sr# | Highest Score Entity | Entity Sentiment Level | Count |
+|:---:|:--------------------:|:----------------------:|:-----:|
+| 1   | Amazon               | Neutral                | 1242  |
+| 2   | first                | Neutral                | 646   |
+| 3   | Christmas            | Neutral                | 558   |
+| 4   | Alexa                | Neutral                | 365   |
+| 5   | Kindle               | Neutral                | 284   |
+| 6   | iPad                 | Neutral                | 275   |
+| 7   | Duracell             | Neutral                | 270   |
+| 8   | two                  | Neutral                | 265   |
+| 9   | 2                    | Neutral                | 255   |
+| 10  | Love                 | Positive               | 218   |
+
+
+### Entities Word Cloud
+Word Cloud image show entities used in the reviews. The bigger the size of word more frequent it is used.  
+
+![Alt Text](images/word-cloud.png)
 ## Accessing Reviews Authenticity
 
 ### Moving Average Plot of Sentiments Vs Recommendation
