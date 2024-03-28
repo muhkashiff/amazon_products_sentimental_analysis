@@ -152,7 +152,7 @@ sentiment_df['intensity_level'] = pd.cut(sentiment_df['intensity'], bins=bins, l
 print(sentiment_df)
 ``` 
 
-##  Determining Entities Sentiments  
+##  Determining Entities Sentiment 
 
 Entities sentiment score and key words are determined. For sake of project only keywords with highest score are kept. Since the focus of project is to determine polarity of the reviews.  
 ``` bash
