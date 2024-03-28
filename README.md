@@ -31,7 +31,8 @@ Our project delves into the intricate world of product reviews, addressing funda
 - [Time Series Analysis](#time-series-analysis)
   - [Reviewed Products Count](#reviewed-products-count)
   - [Reviewed Products Sentiments Count](#reviewed-products-sentiments-count)
-- [Statitical Analysis](#statitical-analysis)  
+- [Statitical Analysis](#statitical-analysis)
+- [Accessing Reviews Authenticity](#accessing-reviews-authenticity)
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
 - [Dependencies](#dependencies)
@@ -318,7 +319,9 @@ Below is classification of recommended products based on sentiments.
 ### Reviewed Products Sentiments Count  
 ![Alt Text](images/tm-senti.png)  
 
-## Moving Average Plot of Sentiments Vs Recommendation
+## Accessing Reviews Authenticity
+
+### Moving Average Plot of Sentiments Vs Recommendation
 <table>
   <tr>
     <td>Recommendations Vs Emotion</td>
@@ -339,7 +342,7 @@ Below is classification of recommended products based on sentiments.
   </tr>
 </table>  
 
-## Moving Average Plot of Sentiments Vs Rating
+### Moving Average Plot of Sentiments Vs Rating
 <table>
   <tr>
     <td>Rating Vs Emotion</td>
@@ -360,7 +363,7 @@ Below is classification of recommended products based on sentiments.
   </tr>
 </table> 
 
-## Ratings Vs Sentiment features Heatmaps
+### Ratings Vs Sentiment features Heatmaps
 <table>
   <tr>
     <td>Rating Vs Emotion</td>
@@ -381,7 +384,7 @@ Below is classification of recommended products based on sentiments.
   </tr>
 </table>  
 
-## Recommendation Vs Sentiment features Heatmaps
+### Recommendation Vs Sentiment features Heatmaps
 <table>
   <tr>
     <td>Recommendations Vs Emotion</td>
@@ -420,7 +423,7 @@ Below is classification of recommended products based on sentiments.
 
 
 
-# Statistical Analysis  
+## Statistical Analysis  
 <div align="center">  
   
 | Feature            | Result (values)   |
@@ -436,15 +439,15 @@ Below is classification of recommended products based on sentiments.
 
 </div>  
 
-## Histogram
+### Histogram
 ![Alt Text](images/histogram.png)  
 
 
-## Scatter Plot
+### Scatter Plot
 
 ![Alt Text](images/sen-regression.png)
 
-## Outliers analysis
+### Outliers analysis
 <table>
   <tr>
     <td>Sentiments Score Outliers</td>
@@ -464,7 +467,7 @@ Below is classification of recommended products based on sentiments.
   </tr>
 </table>
 
-# Products Recommendation  
+## Products Recommendations Using Machine Learning
 
 ``` bash
 user_review = "I absolutely not loved this product!"
@@ -501,11 +504,11 @@ Brand New Amazon Kindle Fire 16gb 7" Ips Display Tablet Wifi 16 Gb Blue
 AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 
 ```
-# Models Comparison  
+## Models Comparison  
 
-## Classification Reports Comparison
+### Classification Reports Comparison
 
-### Naive Bayes Classification Reports  
+#### Naive Bayes Classification Reports  
 <table>
   <tr>
     <td>Tfidf Vectoriztaion Naive Bayes</td>
@@ -517,7 +520,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
   </tr>
 </table>  
 
-### Gradient Boost Classification Reports  
+#### Gradient Boost Classification Reports  
 <table>
   <tr>
     <td>Tfidf Vectoriztaion Gradient Boost</td>
@@ -529,7 +532,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
   </tr>
 </table>  
 
-### Random Forest Classification Reports  
+#### Random Forest Classification Reports  
 <table>
   <tr>
     <td>Tfidf Vectoriztaion Random Forest</td>
@@ -541,7 +544,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
   </tr>
 </table>  
 
-### SVM Classification Reports  
+#### SVM Classification Reports  
 <table>
   <tr>
     <td>Tfidf Vectoriztaion SVM</td>
@@ -553,7 +556,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
   </tr>
 </table>  
 
-### Logistic Regression Classification Reports  
+#### Logistic Regression Classification Reports  
 <table>
   <tr>
     <td>Tfidf Vectoriztaion Logistic Regression</td>
@@ -566,7 +569,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 </table> 
 
 
-## Models Precision Comparison
+#### Models Precision Comparison
 <table>
   <tr>
     <td>Tfidf Vectoriztaion Precision</td>
@@ -578,7 +581,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
   </tr>
 </table>  
 
-## Models F1 Score Comparison
+#### Models F1 Score Comparison
 <table>
   <tr>
     <td>Tfidf Vectoriztaion F1 Score</td>
@@ -590,7 +593,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
   </tr>
 </table>  
 
-## Models Recall Score Comparison
+#### Models Recall Score Comparison
 <table>
   <tr>
     <td>Tfidf Vectoriztaion Recall Score</td>
@@ -603,7 +606,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 </table>
 
 
-## Models Accuracy Comparison
+### Models Accuracy Comparison
 
 ![Alt Text](images/accuracy-compar.png)
 
