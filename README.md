@@ -10,7 +10,7 @@ Our project focuses on uncovering the sentiments embedded within customer review
 - [Data Sets](#data-sets)
 - [Data Cleaning](#data-cleaning)
 - [Sentiment Analysis](#sentiment-analysis)
-  - [Determing Sentiment](#determining-sentiment)   
+  - [Determining Sentiment](#determining-sentiment)   
   - [Determining Subjectivity](#determininig-subjectivity)
   - [Determining Emotion](#determining-emotion) 
   - [Determining Intensity](#determininig-intensity)
