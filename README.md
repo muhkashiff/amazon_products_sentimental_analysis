@@ -9,12 +9,12 @@ Our project focuses on uncovering the sentiments embedded within customer review
 - [Data Source](#data-source)
 - [Data Sets](#data-sets)
 - [Data Cleaning](#data-cleaning)
-- [Sentiment Analysis](#sentiment-analysis)
+- [Sentiment Analysis](#sentiment-analysis)  
   - [Determining Sentiment](#determining-sentiment)   
-  - [Determining Subjectivity](#determininig-subjectivity)
-  - [Determining Emotion](#determining-emotion) 
-  - [Determining Intensity](#determininig-intensity)
-  - [Determininig Entities Sentiment](#determining-entities-sentiment)
+  - [Determining Subjectivity](#determininig-subjectivity)  
+  - [Determining Emotion](#determining-emotion)  
+  - [Determining Intensity](#determininig-intensity)  
+  - [Determininig Entities Sentiment](#determining-entities-sentiment)  
 - [Product Sentiment Analysis](#product-sentiment-analysis)
   - [Top 10 Reviewed Products](#top-10-reviewed-products)
   - [Highest Rated Products](#highest-rated-products)
@@ -152,7 +152,7 @@ sentiment_df['intensity_level'] = pd.cut(sentiment_df['intensity'], bins=bins, l
 print(sentiment_df)
 ``` 
 
-##  Determing Entities Sentiments  
+##  Determining Entities Sentiments  
 
 Entities sentiment score and key words are determined. For sake of project only keywords with highest score are kept. Since the focus of project is to determine polarity of the reviews.  
 ``` bash
