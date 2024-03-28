@@ -20,12 +20,12 @@ Our project focuses on uncovering the sentiments embedded within customer review
   - [Highest Rated Products](#highest-rated-products)
   - [Most Recommended Products](#most-recommended-products)
 - [Sentiments Based Recommended Products](#sentiments-based-recommended-products)
-  - [Sentiment Product Recommendation](#sentiment-product-recommendation)   
-  - [Subjectivity Product Recommendation](#subjectivity-product-recommendation)
-  - [Emotion Product Recommendation](#emotion-product-recommendation)    
-  - [Intensity Product Recommendation](#intensity-product-recommendation)  
-  - [Entity Sentiments Products Recommendation](#entity-sentiments-products-recommendation)  
-  - [Overall Sentiments Product Recommendation](#overall-sentiments-product-recommendation)  
+  - [Recommended Products Sentiments](#recommended-Products-sentiments)   
+  - [Recommended Products Subjectivity](#recommended-products-subjectivity)
+  - [Recommended Products Emotion](#recommended-products-emotion)    
+  - [Recommended Products Intensity](#recommended-products-intensity)  
+  - [Recommended Products Entity Sentiments](#recommended-products-entity-sentiments)  
+  - [Recommended Products All Sentiments Aggregated Visualization](#recommended-products-all-sentiments-aggregated-visualization)  
 - [Statitical Analysis](#statitical-analysis)  
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
@@ -259,24 +259,24 @@ Amazon products with recommendation are shown below.
 ## Sentiments Based Recommended Products 
 Below is classification of recommended products based on sentiments.
 
-### Sentiment Product Recommendation  
+### Recommended Products Sentiments  
 ![Alt Text](images/pr-rec-sent.png)
 
-### Subjectivity Product Recommendation    
+###  Recommended Products Subjectivity     
 ![Alt Text](images/pr-rec-subj.png)  
 
-### Emotion Product Recommendation 
+### Recommended Products Emotion 
 
 ![Alt Text](images/pr-rec-emot.png) 
-### Intensity Product Recommendation  
+### Recommended Products Intensity  
 
 ![Alt Text](images/pr-rec-int.png) 
 
-### Entity Sentiments Products Recommendation  
+### Recommended Products Entity Sentiments 
 
 ![Alt Text](images/pr-rec-entity.png)  
 
-### Overall Sentiments Product Recommendation  
+### Recommended Products All Sentiments Aggregated Visualization
 
 ![Alt Text](images/pr-featureScr.png)  
 
