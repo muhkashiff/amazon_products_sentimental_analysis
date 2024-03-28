@@ -15,7 +15,7 @@ Our project focuses on uncovering the sentiments embedded within customer review
   - [Determining Emotion](#determining-emotion)  
   - [Determining Intensity](#determining-intensity)
   - [Determining Entities Sentiment](#determining-entities-sentiment)  
-- [Product Sentiment Analysis](#product-sentiment-analysis)
+- [Products Sentiment Analysis](#products-sentiment-analysis)
   - [Top 10 Reviewed Products](#top-10-reviewed-products)
   - [Highest Rated Products](#highest-rated-products)
   - [Most Recommended Products](#most-recommended-products)
