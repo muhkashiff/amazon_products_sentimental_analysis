@@ -22,7 +22,7 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Categories Sentiment Score](#categories-sentiment-score)
 - [Amazon Products Sentiment Analysis](#amazon-products-sentiment-analysis)
   - [Products Sentiments Score](#products-sentiments-score)   
-  - [Products Subjectivity Score](#-products-subjectivity-score)
+  - [Products Subjectivity Score](#products-subjectivity-score)
   - [Products Emotion Score](#products-emotion-score)    
   - [Products Intensity Score](#products-intensity-score)  
   - [Products Entity Sentiments Score](#products-entity-sentiments-score)  
@@ -256,6 +256,9 @@ Recommendation count visualization shows 31199 products are recommended by custo
 Amazon products with recommendation are shown below.
 
 ![Alt Text](images/pr-recommendct.png)  
+
+### Categories Sentiment Score  
+![Alt Text](images/sen-category.png)  
 
 ## Amazon Products Sentiment Analysis 
 Below is classification of recommended products based on sentiments.
