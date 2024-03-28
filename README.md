@@ -2,7 +2,7 @@
 Sentiment analysis of amazon products and products recommendation
 
 ## Project Summary
-Our project focuses on uncovering the sentiments embedded within customer reviews, utilizing innovative approaches to conduct sentiment analysis. By employing various methodologies, we aim to delve deep into the emotional undercurrents of these reviews. Extracted sentiments serve as pivotal indicators, guiding us in evaluating the credibility of reviews through sophisticated polarity scoring mechanisms. Ultimately, our endeavor seeks to enrich understanding and enhance decision-making processes in the realm of customer feedback analysis.  
+Our project delves into the intricate world of product reviews, addressing fundamental questions that both consumers and sellers grapple with daily. We embark on a journey to uncover the essence of customer sentiment, probing into the depths of each review to discern its true nature. From quantifying the volume of reviews to deciphering their emotional tone—whether positive, negative, or neutral—we leave no stone unturned. But our pursuit goes beyond mere analysis; we strive to differentiate between genuine feedback and deceptive reviews, employing cutting-edge techniques to detect authenticity. Moreover, we don the hat of a seller, offering insightful suggestions on how to respond to positive or negative feedback to optimize customer satisfaction and drive business growth. Our project is a beacon of insight, illuminating the path to informed decision-making for both consumers and sellers alike. 
 
 ## Table of Contents
 
@@ -15,17 +15,18 @@ Our project focuses on uncovering the sentiments embedded within customer review
   - [Determining Emotion](#determining-emotion)  
   - [Determining Intensity](#determining-intensity)
   - [Determining Entities Sentiment](#determining-entities-sentiment)  
-- [Products Sentiment Analysis](#products-sentiment-analysis)
+- [Amazon Products Analysis](#amazon-products-analysis)
   - [Top 10 Reviewed Products](#top-10-reviewed-products)
   - [Highest Rated Products](#highest-rated-products)
   - [Most Recommended Products](#most-recommended-products)
-- [Sentiments Based Recommended Products](#sentiments-based-recommended-products)
-  - [Recommended Products Sentiments](#recommended-Products-sentiments)   
-  - [Recommended Products Subjectivity](#recommended-products-subjectivity)
-  - [Recommended Products Emotion](#recommended-products-emotion)    
-  - [Recommended Products Intensity](#recommended-products-intensity)  
-  - [Recommended Products Entity Sentiments](#recommended-products-entity-sentiments)  
-  - [Recommended Products All Sentiments Aggregated Visualization](#recommended-products-all-sentiments-aggregated-visualization)  
+  - [Categories Sentiment Score](#categories-sentiment-score)
+- [Amazon Products Sentiment Analysis](#amazon-products-sentiment-analysis)
+  - [Products Sentiments Score](#products-sentiments-score)   
+  - [Products Subjectivity Score](#-products-subjectivity-score)
+  - [Products Emotion Score](#products-emotion-score)    
+  - [Products Intensity Score](#products-intensity-score)  
+  - [Products Entity Sentiments Score](#products-entity-sentiments-score)  
+  - [Products All Sentiments Aggregated Visualization](#products-all-sentiments-aggregated-visualization)  
 - [Statitical Analysis](#statitical-analysis)  
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
@@ -198,7 +199,7 @@ sentiment_df['highest_sentiment_entity'] = sentiment_df['reviews.text'].apply(an
 sentiment_df['entity_sentiment_level'] = sentiment_df['highest_sentiment_entity'].apply(lambda x: bin_sentiment(TextBlob(x).sentiment.polarity) if x else None)
 
 ```
-## Products Sentiment Analysis
+## Amazon Products Analysis
 In this analysis products that got most reviews and type of reviews are analysed.  
 
 ### Top 10 Reviewed Products  
@@ -256,27 +257,27 @@ Amazon products with recommendation are shown below.
 
 ![Alt Text](images/pr-recommendct.png)  
 
-## Sentiments Based Recommended Products 
+## Amazon Products Sentiment Analysis 
 Below is classification of recommended products based on sentiments.
 
-### Recommended Products Sentiments  
+### Products Sentiments Score  
 ![Alt Text](images/pr-rec-sent.png)
 
-###  Recommended Products Subjectivity     
+###  Products Subjectivity Score     
 ![Alt Text](images/pr-rec-subj.png)  
 
-### Recommended Products Emotion 
+### Products Emotion Score 
 
 ![Alt Text](images/pr-rec-emot.png) 
-### Recommended Products Intensity  
+### Products Intensity Score  
 
 ![Alt Text](images/pr-rec-int.png) 
 
-### Recommended Products Entity Sentiments 
+### Products Entity Sentiments Score
 
 ![Alt Text](images/pr-rec-entity.png)  
 
-### Recommended Products All Sentiments Aggregated Visualization
+### Products All Sentiments Aggregated Visualization
 
 ![Alt Text](images/pr-featureScr.png)  
 
