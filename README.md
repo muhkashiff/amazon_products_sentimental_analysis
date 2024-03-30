@@ -41,7 +41,11 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Outliers](#outliers)
   - [Scatter Plot](#scatter-plot)
   - [Hypothesis Testing](#hypothesis-testing)
-- [Models Comparison](#models-comparison) 
+- [Models Comparison](#models-comparison)
+   - [Classification Reports](#classification-reports)
+   - [Parameters Heatmaps Comparison](#parameters-heatmaps-comparison)
+   - [Models Accuracy Comparison](#models-accuracy-comparison)
+- [Products Recommendations Using Machine Learning](#products-recommendations-using-machine-learning)
 - [Results and Conclusions](#results-and-conclusions)
 - [Dependencies](#dependencies)
 - [Future Work](#future-work)
@@ -612,7 +616,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 ```
 ## Models Comparison  
 
-### Classification Reports Comparison
+### Classification Reports
 
 #### Naive Bayes Classification Reports  
 <table>
@@ -674,6 +678,7 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
   </tr>
 </table> 
 
+## Parameters Heatmaps Comparison
 
 #### Models Precision Comparison
 <table>
