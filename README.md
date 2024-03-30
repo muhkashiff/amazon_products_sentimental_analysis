@@ -452,6 +452,8 @@ Word Cloud image show entities used in the reviews. The bigger the size of word 
 
 
 ## Statistical Analysis  
+
+### Summary Statistics
 <div align="center">  
   
 | Feature            | Result (values)   |
