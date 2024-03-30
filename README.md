@@ -38,6 +38,9 @@ Our project delves into the intricate world of product reviews, addressing funda
 - [Statistical Analysis](#statistical-analysis)
   - [Summary Statistics](#summary-statistics)
   - [Histograms](#histograms)
+  - [Outliers](#outliers)
+  - [Scatter Plot](#scatter-plot)
+  - [Hypothesis Testing](#[hypothesis-testing)
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
 - [Dependencies](#dependencies)
@@ -494,7 +497,7 @@ Word Cloud image show entities used in the reviews. The bigger the size of word 
 
 ![Alt Text](images/sen-regression.png)
 
-### Outliers analysis
+### Outliers 
 <table>
   <tr>
     <td>Sentiments Score Outliers</td>
@@ -512,7 +515,63 @@ Word Cloud image show entities used in the reviews. The bigger the size of word 
     <td><img src="images/bx-emot.png" alt="emotion" width="500"></td>
     <td><img src="images/bx-subj.png" alt="subjectivity" width="500"></td>
   </tr>
-</table>
+</table>  
+
+### Hypothesis Testing  
+```bash
+# Download the VADER lexicon
+nltk.download('vader_lexicon')
+
+# Step 1: Read Data
+data = sentiment_df['reviews.text']
+
+# Step 2: Labeling Data
+sid = SentimentIntensityAnalyzer()
+authenticity_labels = []
+
+for review in data:
+    # Perform sentiment analysis to determine the sentiment intensity
+    sentiment_scores = sid.polarity_scores(review)
+    
+    # Classify reviews based on sentiment intensity thresholds
+    if sentiment_scores['compound'] > 0.9:  # Very high positive sentiment intensity
+        authenticity_labels.append('fake')
+    elif sentiment_scores['compound'] < 0:  # Very low or negative sentiment intensity
+        authenticity_labels.append('fake')
+    else:
+        authenticity_labels.append('genuine')
+
+# Add authenticity labels to the DataFrame
+sentiment_df['authenticity_label'] = authenticity_labels 
+
+# Step 3: Hypothesis Testing
+# Count the number of genuine and fake reviews
+genuine_count = (sentiment_df['authenticity_label'] == 'genuine').sum()
+fake_count = (sentiment_df['authenticity_label'] == 'fake').sum()
+
+# Create a contingency table
+contingency_table = [[genuine_count, fake_count],
+                     [len(sentiment_df) - genuine_count, len(sentiment_df) - fake_count]]
+
+# Perform Fisher's exact test
+oddsratio, p_value = fisher_exact(contingency_table)
+
+# Set the significance level
+alpha = 0.05
+
+# Print the results of the hypothesis test
+if p_value < alpha:
+    print("Reject the null hypothesis. There is a significant difference in the proportion of genuine and fake reviews.")
+else:
+    print("Fail to reject the null hypothesis. There is no significant difference in the proportion of genuine and fake reviews.")
+```
+
+Output of hypyothesis testing  
+
+```
+Reject the null hypothesis. There is a significant difference in the proportion of genuine and fake reviews.
+```
+
 
 ## Products Recommendations Using Machine Learning
 
