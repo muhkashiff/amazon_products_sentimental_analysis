@@ -40,7 +40,7 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Histograms](#histograms)
   - [Outliers](#outliers)
   - [Scatter Plot](#scatter-plot)
-  - [Hypothesis Testing](#[hypothesis-testing)
+  - [Hypothesis Testing](#hypothesis-testing)
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
 - [Dependencies](#dependencies)
