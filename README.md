@@ -35,6 +35,9 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Entities Count](#entities-count)
   - [Entities Word Cloud](#entities-word-cloud)  
 - [Accessing Reviews Authenticity](#accessing-reviews-authenticity)
+  - [Moving Average Plots Analysis](#moving-average-plots-analysis)
+  - [Heatmaps Analysis](#heatmaps-analysis)
+  - [Correlation Analysis](#correlation-analysis)  
 - [Statistical Analysis](#statistical-analysis)
   - [Summary Statistics](#summary-statistics)
   - [Histograms](#histograms)
@@ -355,6 +358,9 @@ Word Cloud image show entities used in the reviews. The bigger the size of word 
 
 ![Alt Text](images/word-cloud.png)
 ## Accessing Reviews Authenticity
+Authenticity of reviews are accessed by using following methods.  
+
+## Moving Average Plots Analysis 
 
 ### Moving Average Plot of Sentiments Vs Recommendation
 <table>
@@ -398,6 +404,8 @@ Word Cloud image show entities used in the reviews. The bigger the size of word 
   </tr>
 </table> 
 
+## Heatmaps Analysis
+
 ### Ratings Vs Sentiment features Heatmaps
 <table>
   <tr>
@@ -440,7 +448,8 @@ Word Cloud image show entities used in the reviews. The bigger the size of word 
   </tr>
 </table>  
 
-## Correlation Analysis
+## Correlation Analysis  
+
 <table>
   <tr>
     <td>Correlation Sentiment Vs Intensity</td>
