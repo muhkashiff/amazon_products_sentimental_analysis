@@ -35,7 +35,7 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Entities Count](#entities-count)
   - [Entities Word Cloud](#entities-word-cloud)  
 - [Accessing Reviews Authenticity](#accessing-reviews-authenticity)
-- [Statitical Analysis](#statitical-analysis)
+- [Statistical Analysis](#statistical-analysis)
   - [Summary Statistics](#summary-statistics)
   - [Histograms](#histograms)
 - [Models Comparison](#models-comparison) 
