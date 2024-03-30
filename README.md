@@ -735,6 +735,7 @@ This project involves using various dependences listed below for data cleaning a
 
 ```bash
 # import Denpendencies
+# import Denpendencies
 import numpy as np
 import pandas as pd
 import os
@@ -757,7 +758,15 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.feature_extraction.text import TfidfVectorizer
 import nltk
 import spacy
-
+from sklearn.linear_model import LinearRegression 
+from wordcloud import WordCloud 
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from scipy.stats import fisher_exact
+from scipy.stats import norm
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.collocations import BigramCollocationFinder
+from nltk.metrics import BigramAssocMeasures
 ```
 ## Future Work
 
