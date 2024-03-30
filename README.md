@@ -35,7 +35,9 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Entities Count](#entities-count)
   - [Entities Word Cloud](#entities-word-cloud)  
 - [Accessing Reviews Authenticity](#accessing-reviews-authenticity)
-- [Statitical Analysis](#statitical-analysis)  
+- [Statitical Analysis](#statitical-analysis)
+  - [Summary Statistics](#summary-statistics)
+  - [Histograms](#histograms)
 - [Models Comparison](#models-comparison) 
 - [Results and Conclusions](#results-and-conclusions)
 - [Dependencies](#dependencies)
@@ -465,8 +467,25 @@ Word Cloud image show entities used in the reviews. The bigger the size of word 
 
 </div>  
 
-### Histogram
-![Alt Text](images/histogram.png)  
+### Histograms
+<table>
+  <tr>
+    <td>Sentiments Histogram</td>
+    <td>Intensity Histogram</td>
+  </tr>
+  <tr>
+    <td><img src="images/hist-sentiment.png" alt="sentiment" width="500"></td>
+    <td><img src="images/hist-intense.png" alt="intensity" width="500"></td>
+  </tr>
+   <tr>
+    <td>Emotion Histogram</td>
+    <td>Subjectivity Histogram</td>
+  </tr>
+  <tr>
+    <td><img src="images/hist-emotion.png" alt="emotion" width="500"></td>
+    <td><img src="images/hist-subjectivity.png" alt="subjectivity" width="500"></td>
+  </tr>
+</table>  
 
 
 ### Scatter Plot
