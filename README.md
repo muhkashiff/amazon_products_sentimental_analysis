@@ -22,14 +22,14 @@ Our project delves into the intricate world of product reviews, addressing funda
 - [Amazon Products Sentiment Analysis](#amazon-products-sentiment-analysis)
   - [Sentiments Data Distribution](#sentiments-data-distribution)
   - [Unlocking Consumer Sentiment: Comprehensive Analysis of Product-Based Sentiment Scores](#unlocking-consumer-sentiment-comprehensive-analysis-of-product-based-sentiment-scores)
-  - [Products Sentiments Score](#products-sentiments-score)   
-  - [Products Subjectivity Score](#products-subjectivity-score)
-  - [Products Emotion Score](#products-emotion-score)    
-  - [Products Intensity Score](#products-intensity-score)  
-  - [Products Entity Sentiments Score](#products-entity-sentiments-score)  
-  - [Products All Sentiments Aggregated Visualization](#products-all-sentiments-aggregated-visualization)
+    - [Products Sentiments Score](#products-sentiments-score)   
+    - [Products Subjectivity Score](#products-subjectivity-score)
+    - [Products Emotion Score](#products-emotion-score)    
+    - [Products Intensity Score](#products-intensity-score)  
+    - [Products Entity Sentiments Score](#products-entity-sentiments-score)  
+    - [Products All Sentiments Aggregated Visualization](#products-all-sentiments-aggregated-visualization)
   - [Categories Sentiment Score](#categories-sentiment-score)
-- [Time Series Analysis](#time-series-analysis)
+- [Temporal Analysis](#temporal-analysis)
   - [Reviewed Products Count](#reviewed-products-count)
   - [Reviewed Products Sentiments Count](#reviewed-products-sentiments-count)
 - [Entities Analysis](#entities-analysis)
@@ -339,7 +339,7 @@ In this exploration, we delve into the intricate world of consumer sentiments su
 ### Categories Sentiment Score  
 ![Alt Text](images/sen-category.png)  
 
-## Time Series Analysis
+## Temporal Analysis
 
 ### Reviewed Products Count
 ![Alt Text](images/date-time-review.png)  
