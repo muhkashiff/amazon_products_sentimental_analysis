@@ -21,7 +21,7 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Most Recommended Products](#most-recommended-products)
 - [Amazon Products Sentiment Analysis](#amazon-products-sentiment-analysis)
   - [Sentiments Data Distribution](#sentiments-data-distribution)
-  - [Unlocking Consumer Sentiment: Comprehensive Analysis of Product-Based Sentiment Scores](#Unlocking-Consumer-Sentiment-:-Comprehensive-Analysis-of-Product-Based-Sentiment-Scores)
+  - [Unlocking Consumer Sentiment: Comprehensive Analysis of Product-Based Sentiment Scores](#unlocking-consumer-sentiment-comprehensive-analysis-of-product-based-sentiment-scores)
   - [Products Sentiments Score](#products-sentiments-score)   
   - [Products Subjectivity Score](#products-subjectivity-score)
   - [Products Emotion Score](#products-emotion-score)    
