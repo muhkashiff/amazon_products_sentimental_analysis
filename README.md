@@ -348,7 +348,8 @@ As we embark on this temporal analysis, we anticipate uncovering dynamic shifts,
 ### Reviewed Products Sentiments Count  
 ![Alt Text](images/tm-senti.png)  
 
-## Entities Analysis
+## Entities Analysis  
+In the realm of consumer insights, entity analysis unveils a fascinating narrative, shedding light on the most prominent entities within Amazon product reviews. Our exploration focuses on the top 10 entities identified through meticulous analysis, offering a glimpse into the words that dominate consumer discourse. As we delve into this analysis, we encounter a diverse array of entities, ranging from brand names like Amazon and Alexa to seasonal references like Christmas. Each entity is accompanied by its sentiment level, providing a nuanced understanding of consumer attitudes and perceptions. Through quantitative analysis, we discern the frequency with which these entities appear in reviews, illuminating their significance in shaping consumer experiences. Accompanied by a visually captivating word cloud image, our exploration aims to unravel the intricate web of consumer sentiments and preferences surrounding Amazon products, offering valuable insights for businesses and researchers alike.  
 
 ### Entities Count
 Below is key word frequency (count). 
@@ -372,7 +373,7 @@ Word Cloud image show entities used in the reviews. The bigger the size of word 
 
 ![Alt Text](images/word-cloud.png)
 ## Accessing Reviews Authenticity
-Authenticity of reviews are accessed by using following methods.  
+In the realm of consumer feedback analysis, ensuring the authenticity of reviews is paramount for businesses and consumers alike. Our exploration delves into innovative methodologies, leveraging moving average charts, heat maps, and correlation analyses to assess the authenticity of reviews for both recommended and rated products. By employing moving average charts, we track the trends and fluctuations in review scores over time, providing insights into the consistency and reliability of consumer sentiments. Heat maps offer a visual representation of the relationships between various product attributes and review ratings, unveiling patterns and correlations that may indicate genuine consumer experiences. Furthermore, correlation analyses allow us to identify the degree of association between recommended products and their corresponding ratings, shedding light on the alignment between consumer preferences and product performance for both recommended and rated items. Through these analytical techniques, we aim to provide stakeholders with robust tools for evaluating the credibility and trustworthiness of consumer reviews, ultimately fostering transparency and informed decision-making in the marketplace.   
 
 ## Moving Average Plots Analysis 
 
