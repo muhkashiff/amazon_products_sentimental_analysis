@@ -21,6 +21,7 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Most Recommended Products](#most-recommended-products)
 - [Amazon Products Sentiment Analysis](#amazon-products-sentiment-analysis)
   - [Sentiments Data Distribution](#sentiments-data-distribution)
+  - [Unlocking Consumer Sentiment: Comprehensive Analysis of Product-Based Sentiment Scores](#Unlocking-Consumer-Sentiment-:-Comprehensive-Analysis-of-Product-Based-Sentiment-Scores)
   - [Products Sentiments Score](#products-sentiments-score)   
   - [Products Subjectivity Score](#products-subjectivity-score)
   - [Products Emotion Score](#products-emotion-score)    
@@ -309,6 +310,10 @@ Moreover, entity analysis unveils a notable 97.5% neutrality, with a marginal 2.
     <td><img src="images/sen-subj.png" alt="Subjectivity" width="350"></td>
   </tr>
 </table>  
+
+## Unlocking Consumer Sentiment: Comprehensive Analysis of Product-Based Sentiment Scores  
+
+In this exploration, we delve into the intricate world of consumer sentiments surrounding various products. Through meticulous analysis and advanced algorithms, we unravel the layers of emotions and opinions expressed by consumers in their reviews. Our goal is to provide a deep understanding of how products resonate with consumers, from eliciting joy and satisfaction to addressing concerns and disappointments. Join us as we navigate through the rich tapestry of sentiments, offering valuable insights into consumer perceptions and preferences.
 
 ### Products Sentiments Score  
 ![Alt Text](images/pr-rec-sent.png)
