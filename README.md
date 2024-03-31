@@ -278,9 +278,17 @@ Amazon products with recommendation are shown below.
 ![Alt Text](images/pr-recommendct.png)  
 
 ## Amazon Products Sentiment Analysis 
-Analyzing sentiments through meticulously crafted algorithms, this GitHub repository unveils insightful pie charts derived from reviews. A staggering revelation emerges as over 99% of sentiments resonate positively or neutrally, with a mere 0.8% veering into negativity. Yet, the essence lies not just in the sentiment, but in its intensity. Here, a profound observation surfaces: a noteworthy 29.2% emanates from the extremes of intensity, sparking suspicions of falsity. This suspicion galvanizes our pursuit, guiding us to scrutinize very high and very low intensity reviews as potential falsehoods, bolstered by statistical hypothesis testing. Delving deeper into emotions, an overwhelming 92.9% reflect joy and neutrality, juxtaposed with a mere 7.1% showcasing anger or sadness, epitomizing Amazon's prowess in evoking positive consumer responses. Subjectivity reigns supreme in 82.6% of reviews, bridging the gap between personal perspectives and objectivity, which accounts for a modest 17.4%. This dichotomy delineates a poignant connection between subjectivity and positive emotions, juxtaposed with the objectivity that may evoke negativity. Furthermore, entity analysis showcases a staggering 97.5% neutrality, with a sparse 2.5% exuding positivity, indicating a prevailing authenticity in consumer feedback. In summation, these pie charts not only signify a positive consumer response but also underscore the authenticity and depth of consumer perspectives encapsulated within.
+Sentiment analysis of consumer reviews on Amazon products is conducted through a variety of methods outlined below:
 
-### Sentiments Data Distribution
+### Sentiments Data Distribution  
+
+This GitHub repository employs sophisticated algorithms to dissect sentiments within Amazon product reviews. The results are elegantly visualized through pie charts, offering a comprehensive overview. A striking revelation surfaces: a staggering 99% of sentiments lean towards positivity or neutrality, while a mere 0.8% veer towards negativity. Yet, the analysis delves deeper, spotlighting the intensity of these sentiments. Notably, 29.2% emanate from extreme intensities, prompting scrutiny for potential falsification. This observation fuels our investigation, augmented by rigorous statistical hypothesis testing.
+
+Further exploration into emotional tones reveals a compelling narrative. An overwhelming 92.9% of reviews exude joy and neutrality, contrasting starkly with a minimal 7.1% expressing anger and sadness, underscoring Amazon's adeptness at evoking positive consumer responses. Subjectivity dominates in 82.6% of reviews, juxtaposed with a more objective 17.4%, delineating a nuanced interplay between personal perspectives and objectivity. This interplay hints at the potential correlation between subjectivity and positive emotions, contrasting with the potential negativity associated with objectivity.
+
+Moreover, entity analysis unveils a notable 97.5% neutrality, with a marginal 2.5% exuding positivity, implying a prevailing authenticity in consumer feedback. In summary, these pie charts serve as a testament not only to the favorable consumer sentiment towards Amazon products but also to the nuanced interplay between subjective experiences and objective assessments, thereby enriching our understanding of consumer perspectives.  
+
+
 <table>
   <tr>
     <td>Pie Chart Emotion</td>
