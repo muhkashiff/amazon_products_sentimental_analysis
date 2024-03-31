@@ -241,10 +241,6 @@ Top 10 reviewed products are below in the table along with number of reviews eac
 |10|  All-New Fire HD 8 Tablet with Alexa, 8 HD Disp... | 883   |                              
 </div>  
 
-### Top 10 Reviewed Categories  
-![Alt text](images/sen-category.png)
-
-
 ### Highest Rated Products 
 
 Ratings count visualization shows that most of the products got top ratings of 5 and 4. top 10 highest rated products visualization shows products with most ratings. 
@@ -340,6 +336,11 @@ In this exploration, we delve into the intricate world of consumer sentiments su
 ![Alt Text](images/sen-category.png)  
 
 ## Temporal Analysis
+Temporal analysis offers a unique lens to delve into evolving trends and preferences over time. Our investigation focuses on identifying the top 10 products based on consumer reviews within a specified time frame, concurrently mapping sentiment counts to discern prevailing attitudes. By leveraging temporal analysis, we aim to unearth not only the most sought-after products but also the sentiments surrounding them, providing actionable insights for businesses and researchers alike.
+
+Through rigorous data mining and analysis, we navigate through the temporal landscape, unraveling the temporal evolution of consumer preferences. This journey enables us to decode the pulse of the market, pinpointing the products that have captured consumers' attention and elicited significant feedback. Additionally, by quantifying sentiment counts across this temporal spectrum, we gain a nuanced understanding of the prevailing attitudes towards these products.
+
+As we embark on this temporal analysis, we anticipate uncovering dynamic shifts, seasonal trends, and emerging patterns that shape consumer sentiment. By synthesizing these insights, we aim to empower stakeholders to make informed decisions, capitalize on market opportunities, and tailor strategies to resonate with consumer preferences over time. 
 
 ### Reviewed Products Count
 ![Alt Text](images/date-time-review.png)  
