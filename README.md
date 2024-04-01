@@ -475,6 +475,16 @@ In the realm of consumer feedback analysis, ensuring the authenticity of reviews
     <td><img src="images/cor-senint.png" alt="SenvsInt" width="450"></td>
     <td><img src="images/cor-sensbj.png" alt="SenVsSubj" width="450"></td>
     <td><img src="images/cor-intsbj.png" alt="SubjInt" width="450"></td>
+  </tr> 
+  <tr>
+    <td>Pearson Correlation Coefficient </td>
+    <td>Pearson Correlation Coefficient </td>
+    <td>Pearson Correlation Coefficient </td>
+  </tr>
+  <tr>
+    <td> 0.9167493708397647 </td>
+    <td> 0.5895588862163789 </td>
+    <td> 0.6601473417513494 </td>
   </tr>
 </table>
 
@@ -541,6 +551,7 @@ In the realm of consumer feedback analysis, ensuring the authenticity of reviews
     <td><img src="images/sct-subject.png" alt="subjectivity" width="500"></td>
   </tr>
 </table>  
+
 ### Outliers 
 <table>
   <tr>
