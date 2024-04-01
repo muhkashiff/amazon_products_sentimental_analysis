@@ -523,8 +523,24 @@ In the realm of consumer feedback analysis, ensuring the authenticity of reviews
 
 ### Scatter Plot
 
-![Alt Text](images/sen-regression.png)
-
+<table>
+  <tr>
+    <td>Sentiments Scatter Plot</td>
+    <td>Intensity Scatter Plot</td>
+  </tr>
+  <tr>
+    <td><img src="images/sen-regression.png" alt="sentiment" width="500"></td>
+    <td><img src="images/sct-intensity.png" alt="intensity" width="500"></td>
+  </tr>
+   <tr>
+    <td>Emotion Scatter Plot</td>
+    <td>Subjectivity Scatter Plot</td>
+  </tr>
+  <tr>
+    <td><img src="images/sct-emotion.png" alt="emotion" width="500"></td>
+    <td><img src="images/sct-subject.png" alt="subjectivity" width="500"></td>
+  </tr>
+</table>  
 ### Outliers 
 <table>
   <tr>
