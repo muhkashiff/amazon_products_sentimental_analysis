@@ -309,12 +309,16 @@ Moreover, entity analysis unveils a notable 97.5% neutrality, with a marginal 2.
 
 ## Unlocking Consumer Sentiment: Comprehensive Analysis of Product-Based Sentiment Scores  
 
-In this exploration, we delve into the intricate world of consumer sentiments surrounding various products. Through meticulous analysis and advanced algorithms, we unravel the layers of emotions and opinions expressed by consumers in their reviews. Our goal is to provide a deep understanding of how products resonate with consumers, from eliciting joy and satisfaction to addressing concerns and disappointments. Join us as we navigate through the rich tapestry of sentiments, offering valuable insights into consumer perceptions and preferences.
+In this exploration, we delve into the intricate world of consumer sentiments surrounding various products. Through meticulous analysis, we unravel the layers of emotions and opinions expressed by consumers in their reviews. Our goal is to provide a deep understanding of how products resonate with consumers, from eliciting joy and satisfaction to addressing concerns and disappointments. It has been tried to navigate through the rich tapestry of sentiments, offering valuable insights into consumer perceptions and preferences.
 
 ### Products Sentiments Score  
+Below chart shows sentiments e.g. positive (green), neutral (orange) and negative (blue) bars of each product. Only top 10 products are shown in the visualization. It is observed that Alkaline AAA and AA batteries have got most of the reviews. Alkaline AAA batteries got total of 8343 sentiments which constitute 48.84% postive sentiment, 49.97% neutral sentiment and only 1.18% negative sentiment. Overall it shows really minute percentage of negative sentiment. Even if we look into negative sentiments of other products they show really negligible percentage. It is concluded from below charts that overall amazon products are performing better especially batteries.  
+
 ![Alt Text](images/pr-rec-sent.png)
 
-###  Products Subjectivity Score     
+###  Products Subjectivity Score 
+Subjectivity chart of each product is shown below. Subjectivity refers to personal opinion and objectivity refers to verifiable iformation based on facts and evidence (Lack of favouritism). So in this analysis, it is assumed if a product gets more subjective score it is more likely consumers's personal perspective and review is most likely an authentic review as well.  Since AAA and AA batteries got more reviews so we will percentage of sentiments. Out of 7518 Subjective and Very Subjective contribute 3549 (47.21%) and neutral consitute 2284 (30.38%) and objective and very objective constitute 1685 (22.41%).Subjectivity score indicates more of customer linking or emotions towards products reviews. This also indicates reviews are most likely authentic and shows a consumers personal sentiments.  
+
 ![Alt Text](images/pr-rec-subj.png)  
 
 ### Products Emotion Score 
