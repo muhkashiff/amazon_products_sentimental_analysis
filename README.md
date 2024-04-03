@@ -331,7 +331,8 @@ Intensity refers to the strength or depth of emotion expressed by customers rega
 
 ![Alt Text](images/pr-rec-int.png) 
 
-### Products Entity Sentiments Score
+### Products Entity Sentiments Score  
+Entities sentiments in Amazon consumer reviews refer to the emotional tone associated with specific entities mentioned within the reviews, such as products, brands, or features.  Entities sentiments often revolve around specific products or brands mentioned in the reviews. Customers express their feelings and experiences regarding these products through positive, negative, or neutral sentiments. Positive sentiments may indicate satisfaction with the product's quality, performance, or value for money, while negative sentiments may highlight dissatisfaction, issues, or shortcomings. Neutral sentiments may indicate a balanced or indifferent stance towards the product.Entities sentiments can also extend to sentiments towards brands or manufacturers. Customers may have positive sentiments towards trusted brands known for quality and reliability, while negative sentiments may arise towards brands associated with poor customer service or product failures. Brand sentiments play a crucial role in shaping consumer perceptions, loyalty, and purchase decisions.In addition to product-related sentiments, customers may also express sentiments towards the services associated with the product, such as shipping, packaging, or customer support. Positive service sentiments may indicate a smooth purchasing experience and excellent customer service, while negative sentiments may highlight issues such as delays, damages, or poor communication. from the chart it is evident that most of the products have neutral entities.
 
 ![Alt Text](images/pr-rec-entity.png)  
 
