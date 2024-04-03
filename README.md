@@ -337,7 +337,7 @@ Entities sentiments in Amazon consumer reviews refer to the emotional tone assoc
 ![Alt Text](images/pr-rec-entity.png)  
 
 ### Products All Sentiments Aggregated Visualization
-
+ Below chart shows data aggregation, sorting, filtering, and visualization to analyze and visualize sentiment-related scores for various products in the DataFrame. It helps identify patterns, trends, and outliers in the sentiment data, aiding in understanding customer perceptions and sentiments towards different products.
 ![Alt Text](images/pr-featureScr.png)  
 
 ### Categories Sentiment Score  
