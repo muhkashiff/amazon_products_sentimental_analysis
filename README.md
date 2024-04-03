@@ -337,8 +337,8 @@ Entities sentiments in Amazon consumer reviews refer to the emotional tone assoc
 ![Alt Text](images/pr-rec-entity.png)  
 
 ### Products All Sentiments Aggregated Visualization
- Below chart shows data aggregation, sorting, filtering, and visualization to analyze and visualize sentiment-related scores for various products in the DataFrame. It helps identify patterns, trends, and outliers in the sentiment data, aiding in understanding customer perceptions and sentiments towards different products.
-![Alt Text](images/pr-featureScr.png)  
+The chart illustrates a comprehensive analysis pipeline, encompassing data aggregation, sorting, filtering, and visualization, aimed at unraveling sentiment-related insights for diverse products within the DataFrame. This methodological approach serves as a powerful lens, uncovering intricate patterns, discernible trends, and noteworthy outliers embedded within the sentiment data. By dissecting the sentiment-related scores across various products, this chart facilitates a nuanced understanding of customer perceptions and sentiments, shedding light on the intricate tapestry of consumer experiences. Notably, the chart unveils intriguing relationships among sentiments, as evidenced by the observation that Line-a corresponds to the Amazon HD 8 Kids Pink waterproof casing product. This product emerges with the highest scores in intensity, objectivity, joy, and positive sentiment, imparting a sense of complexity to the reviews. In contrast, the AAA Alkaline batteries(Line-b), despite amassing a substantial volume of reviews, exhibit distinct sentiment characteristics. With high subjectivity, low intensity, and a prevalence of joy and neutral sentiments, these batteries offer insights into the authenticity and genuine sentiments reflected in the reviews. Through this chart, we navigate the intricacies of consumer sentiments, illuminating the multifaceted landscape of product perceptions and experiences.
+![Alt Text](images/aggregated.jpg)  
 
 ### Categories Sentiment Score  
 ![Alt Text](images/sen-category.png)  
