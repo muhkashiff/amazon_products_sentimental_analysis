@@ -321,7 +321,8 @@ Subjectivity chart of each product is shown below. Subjectivity refers to person
 
 ![Alt Text](images/pr-rec-subj.png)  
 
-### Products Emotion Score 
+### Products Emotion Score  
+Emotion based count chart is shown below. A total of 8343 reviews are found to have different emotional sentiments for AAA Alkaline batteries. Joy emotion obtained 4251(50.95%), neutral emotion got 3132(37.55%), Anger obtained 847(10.15%) and sadness got 113(1.35%) reviews. It is observed from emotions percentage that AAA obtained around 89% of Joy and neutral while around 11% contribute to sadness and anger. Overall this product is satisfying customers expectations. On the other hand, number 10 product All new FireHD 8 Tablet with Alexa, 16GB, Marine Blue, is found to have only 883 reviews, Out of total Joy contribute towards 61.61% while  netural emotions contribute 34.76% and sum of anger and sadness contribute 3.63%. It is evident even if a product obtained less number of reviews but still majority of reviews fall in Joy and neutral category which prove that Amazon products are upto expectations of consumer and they have joyfull experience.  
 
 ![Alt Text](images/pr-rec-emot.png) 
 ### Products Intensity Score  
