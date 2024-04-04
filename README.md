@@ -341,6 +341,8 @@ The chart illustrates a comprehensive analysis pipeline, encompassing data aggre
 ![Alt Text](images/aggregated.jpg)  
 
 ### Categories Sentiment Score  
+From category-wise sentiment analysis, it's evident that Electronic products excel in attracting consumers and delivering superior experiences, garnering predominantly positive and neutral reviews. A significant sentiment count of 17,271 is recorded for the electronics category, with a mere 99 instances expressing negative sentiments, constituting a negligible 0.57%. This underscores the overwhelmingly positive reception of electronic products. Following closely, Health and Beauty products secure the second-highest sentiment count at 12,071 reviews, with only 149 (1.23%) indicating negative sentiments. This demonstrates a commendable performance by both Electronics and Health and Beauty categories, reflecting their ability to cultivate positive and neutral perceptions among consumers.  
+
 ![Alt Text](images/sen-category.png)  
 
 ## Temporal Analysis
