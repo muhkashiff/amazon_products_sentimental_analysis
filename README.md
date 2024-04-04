@@ -352,10 +352,14 @@ Through rigorous data mining and analysis, we navigate through the temporal land
 
 As we embark on this temporal analysis, we anticipate uncovering dynamic shifts, seasonal trends, and emerging patterns that shape consumer sentiment. By synthesizing these insights, we aim to empower stakeholders to make informed decisions, capitalize on market opportunities, and tailor strategies to resonate with consumer preferences over time. 
 
-### Reviewed Products Count
+### Reviewed Products Count  
+Below chart shows the products with highest reviews within particular period of time.  
+
 ![Alt Text](images/date-time-review.png)  
 
 ### Reviewed Products Sentiments Count  
+Below chart shows the products with highest sentiments within particular period of time.  
+
 ![Alt Text](images/tm-senti.png)  
 
 ## Entities Analysis  
