@@ -390,8 +390,20 @@ Word Cloud image show entities used in the reviews. The bigger the size of word 
 In the realm of consumer feedback analysis, ensuring the authenticity of reviews is paramount for businesses and consumers alike. Our exploration delves into innovative methodologies, leveraging moving average charts, heat maps, and correlation analyses to assess the authenticity of reviews for both recommended and rated products. By employing moving average charts, we track the trends and fluctuations in review scores over time, providing insights into the consistency and reliability of consumer sentiments. Heat maps offer a visual representation of the relationships between various product attributes and review ratings, unveiling patterns and correlations that may indicate genuine consumer experiences. Furthermore, correlation analyses allow us to identify the degree of association between recommended products and their corresponding ratings, shedding light on the alignment between consumer preferences and product performance for both recommended and rated items. Through these analytical techniques, we aim to provide stakeholders with robust tools for evaluating the credibility and trustworthiness of consumer reviews, ultimately fostering transparency and informed decision-making in the marketplace.   
 
 ## Moving Average Plots Analysis 
+Moving average charts normally help in identifying trends. Moving average plots of Recommended and Rated products are drawn against their sentiments to observe if rating or recommendation of the product review align with the sentiment of the review. This will help to deternine the authenticy of reviews as well.  
 
-### Moving Average Plot of Sentiments Vs Recommendation
+### Moving Average Plot of Sentiments Vs Recommendation  
+In our data analysis journey, we're using graphs to understand how people feel about products and whether they're recommended or not.
+
+First off, when we look at the graph comparing recommendations to feelings, it's clear that products people don't recommend usually have low scores for feelings like happiness, while recommended products have more neutral or positive feelings.  
+
+Next, we check out the graph showing how personal people's opinions are compared to recommendations. We see that products with lots of recommendations also have a lot of personal opinions attached to them, which suggests that the reviews might be genuine. For instance, products with over 100 recommendations also have around 80 personal opinions associated with them.
+
+Then, we dive into the graph that plots recommended products against different emotions. We notice that recommended products usually have high counts for emotions like joy and neutrality, but not so much for anger. On the other hand, products not recommended hardly show any emotions at all. For instance, recommended products often have over 10,000 counts for joy and neutrality, while anger counts are typically below 2,000.
+
+Lastly, we explore the graph comparing recommendation levels to intensity. We find that both recommended and not recommended products get a lot of intense recommendations, but as the intensity decreases, the counts gradually drop. For example, both types of products often receive over 7,000 recommendations with low to moderate intensity, but as the intensity increases, the counts tend to fall below 5,000.
+
+These graphs help us see that most reviews for recommended products match up with how people feel about them, giving us a good idea that the reviews are real and honest.
 <table>
   <tr>
     <td>Recommendations Vs Emotion</td>
