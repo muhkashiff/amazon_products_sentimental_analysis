@@ -424,7 +424,9 @@ These graphs help us see that most reviews for recommended products match up wit
   </tr>
 </table>  
 
-### Moving Average Plot of Sentiments Vs Rating
+### Moving Average Plot of Sentiments Vs Rating  
+Below, we have some charts comparing sentiments to ratings. A standout trend is that most products receive ratings of 5. Looking at the graphs of emotion, sentiment, and subjectivity, we see a general upward trend. However, in the intensity graph, we notice a decline at very high intensity. This makes us think that extremely high or low sentiment reviews might be fake. The ratings and sentiments seem to match up pretty well, indicating that the reviews are likely genuine.
+
 <table>
   <tr>
     <td>Rating Vs Emotion</td>
