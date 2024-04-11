@@ -485,7 +485,13 @@ In these numerical and color-coded revelations, we find clarity and insight, ill
   </tr>
 </table>  
 
-### Recommendation Vs Sentiment features Heatmaps
+### Recommendation Vs Sentiment features Heatmaps  
+Behold the radiance emanating from the hallowed halls of recommendation, as depicted by these majestic heatmaps showcasing the sentiments bestowed upon favored products. In their vibrant hues, we witness a symphony of delight, a testament to the profound impact of recommendation.
+
+Marvel at the staggering numbers that grace the domain of joy, where a triumphant 18,693 products bask in the euphoria of approval. Behold, too, the luminous glow of positivity, enveloping 17,497 products in its warm embrace. Subjectivity reigns supreme, with a commanding presence of 10,893 products offering a glimpse into the rich tapestry of personal experiences. And let us not forget the moderate intensity that courses through the veins of 7,039 products, a testament to the fervent endorsement they command.
+
+These numbers stand as pillars of customer satisfaction, testaments to the transformative power of recommendation. Each review, steeped in joy and positivity, bears witness to the authenticity of experiences shared. In the realm of recommended products, happiness reigns supreme, illuminating the path to unparalleled customer satisfaction.  
+
 <table>
   <tr>
     <td>Recommendations Vs Emotion</td>
