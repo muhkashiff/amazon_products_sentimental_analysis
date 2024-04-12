@@ -521,7 +521,8 @@ Similarly, the Pearson correlation score serves as a vital tool in data analysis
 
 First and foremost, the Pearson correlation score offers a standardized metric for assessing the degree of correlation between variables. By producing a numerical value between -1 and 1, it enables analysts to gauge the strength and direction of the relationship with ease. A score close to 1 indicates a strong positive correlation, while a score close to -1 suggests a strong negative correlation. A score of 0 indicates no linear correlation.
 
-Moreover, the Pearson correlation score serves as a robust diagnostic tool for identifying relationships and dependencies within a dataset. By calculating correlations between various pairs of variables, analysts can uncover hidden connections and discern patterns that may not be immediately apparent from raw data.
+Moreover, the Pearson correlation score serves as a robust diagnostic tool for identifying relationships and dependencies within a dataset. By calculating correlations between various pairs of variables, analysts can uncover hidden connections and discern patterns that may not be immediately apparent from raw data.  
+Below table shows correlation of different sentiments and their Pearson correlation coeffeicients. Sentiments Vs intensity correlation show linear lines and data points are close to regression line. which is also evident by pearson correlation coeffecient value of 0.9167493708397647. Sentiment Vs Subjectivity correlation does not show strong correlation. majority of data points are condensed near straight line. Pearson correlation coeffecient value of 0.5895588862163789 indicates a positive correlation. And Pearson correlation coeffecient score of 0.6601473417513494 for Subjectivity Vs intensity shows positive correlation as well. So it indicates If a review gets high score of subjectivity, intensity and sentiments, it leads to assumtion that reviews are authentic.
 
 <table>
   <tr>
