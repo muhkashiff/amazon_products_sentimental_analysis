@@ -587,7 +587,9 @@ Above table presents statistical summary measures for four different features: S
 
 - **Maximum (Max)**: Indicates the largest value observed for each feature. The maximum value for Sentiments, Subjectivity, Emotion, and Intensity is 1, suggesting that these features have been standardized or scaled to a range between -1 and 1.
 
-### Histograms
+### Histograms  
+A histogram is a graph showing the frequency distribution of numerical data through bars. Each bar represents a range of values, and its height indicates the frequency of observations within that range. Histograms help visualize data distribution, identify patterns, outliers, and skewness quickly.   
+
 <table>
   <tr>
     <td>Sentiments Histogram</td>
