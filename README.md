@@ -672,6 +672,7 @@ Lower whisker = Q1 - 1.5 * IQR = 0.15 - 1.5 * 0.41 = 0.15 - 0.615 = -0.465
 These formulas can also be applied to calculate the lengths of tails for subjectivity and intensity. Interestingly, while emotions do not exhibit any outliers, subjectivity displays a significant number of 2165 outliers at a single point. This disparity underscores the diverse nature of the dataset and highlights the need for careful consideration when analyzing and interpreting outliers in different variables.
 
 ### Hypothesis Testing  
+Hypothesis testing is performed by assuming any reviews which got intensity score more than 0.9 and less than 0 are fake. while other are considered genuine. Output of the hypothesis shows that null hypothesis is rejected and there is clear difference between fake and geniune reviews based on intensity assumption.
 ```bash
 # Download the VADER lexicon
 nltk.download('vader_lexicon')
