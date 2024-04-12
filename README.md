@@ -42,7 +42,7 @@ Our project delves into the intricate world of product reviews, addressing funda
 - [Statistical Analysis](#statistical-analysis)
   - [Summary Statistics](#summary-statistics)
   - [Histograms](#histograms)
-  - [Outliers](#outliers)
+  - [Box whisker Plots](#box-whisker-plots)
   - [Scatter Plot](#scatter-plot)
   - [Hypothesis Testing](#hypothesis-testing)
 - [Models Comparison](#models-comparison)
@@ -608,9 +608,16 @@ A histogram is a graph showing the frequency distribution of numerical data thro
     <td><img src="images/hist-subjectivity.png" alt="subjectivity" width="500"></td>
   </tr>
 </table>  
+The histograms above provide insights into the distributions of Sentiments, Emotions, Intensity, and Subjectivity.
 
+For Sentiments and Emotions, a notable resemblance is observed, with both exhibiting a bell curve shape, indicating a central tendency in the data. This symmetry suggests a lack of skewness, contributing to their normal-like appearance. However, anomalies are evident with three bars at 0.1 and 0.9-1.0, deviating from the typical distribution. These outliers warrant further investigation as they may influence the dataset.
 
-### Scatter Plot
+Contrastingly, the Intensity histogram displays a skewed distribution with multiple peaks, indicative of non-normal data. The presence of these peaks suggests varying degrees of intensity within the dataset, diverging from a typical bell curve pattern.
+
+In the case of Subjectivity, the majority of data conforms to the bell curve pattern, portraying a central tendency akin to Sentiments and Emotions. This consistency implies a balanced distribution, aligning with the expected behavior of normal data.
+
+### Scatter Plot  
+A scatter plot is a graph used to visualize the relationship between two continuous variables. Each data point is represented by a single point on the graph, with one variable plotted on the horizontal axis and the other on the vertical axis. Scatter plots help identify correlations, outliers, and patterns in the data.  
 
 <table>
   <tr>
@@ -631,7 +638,9 @@ A histogram is a graph showing the frequency distribution of numerical data thro
   </tr>
 </table>  
 
-### Outliers 
+### Box whisker Plots  
+Box-and-whisker plots, or simply box plots, visually represent the distribution of a dataset. They display key statistical measures such as the median, quartiles, and outliers. The box represents the interquartile range (IQR), with the median depicted as a line inside the box. The "whiskers" extend from the box to the highest and lowest values within 1.5 times the IQR from the upper and lower quartiles, respectively. Box plots provide a concise summary of the data's central tendency, spread, and variability.  
+
 <table>
   <tr>
     <td>Sentiments Score Outliers</td>
