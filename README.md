@@ -550,7 +550,11 @@ In essence, the convergence of high subjectivity, intensity, and sentiments sugg
 
 ## Statistical Analysis  
 
-### Summary Statistics
+### Summary Statistics  
+Summary statistics refer to numerical measures that summarize and describe the characteristics of a dataset. These statistics provide a concise overview of the central tendency, variability, and distribution of the data. Common summary statistics include measures such as the mean, median, mode, standard deviation, range, minimum, maximum, quartiles, and percentiles.
+
+Summary statistics are used to gain insights into the underlying patterns and properties of the data, allowing analysts to understand its key features without having to examine each individual data point.  
+
 <div align="center">  
   
 | Feature            | Sentiments (Results)  | Subjectivity (Results)|Emotion (Results)| Intensity (Results)|
@@ -565,6 +569,23 @@ In essence, the convergence of high subjectivity, intensity, and sentiments sugg
 |         max        |   1.000000            |1.000000               |1.000000         |1.000000            |
 
 </div>  
+Above table presents statistical summary measures for four different features: Sentiments, Subjectivity, Emotion, and Intensity, derived from a dataset with 33,332 observations.
+
+- **Count**: Indicates the number of observations for each feature, which is consistent across all features, suggesting a complete dataset with no missing values.
+
+- **Mean**: Represents the average value of each feature across all observations. For example, the mean Sentiments value is approximately 0.3646, indicating that, on average, the sentiment scores fall slightly on the positive side.
+
+- **Standard Deviation (Std)**: Reflects the spread or dispersion of values around the mean for each feature. A higher standard deviation suggests greater variability in the data. For instance, the standard deviation for Sentiments is approximately 0.2974, indicating moderate variability in sentiment scores.
+
+- **Minimum (Min)**: Indicates the smallest value observed for each feature. The minimum value for Sentiments, Subjectivity, Emotion, and Intensity is -1, suggesting that these features have been standardized or scaled to a range between -1 and 1.
+
+- **25th Percentile (25%)**: Represents the value below which 25% of the observations fall. For instance, 25% of Sentiments scores are below approximately 0.15.
+
+- **50th Percentile (50%) or Median**: Represents the value below which 50% of the observations fall. It divides the data into two equal halves. For example, the median Sentiments score is approximately 0.35.
+
+- **75th Percentile (75%)**: Represents the value below which 75% of the observations fall. For instance, 75% of Sentiments scores are below approximately 0.5625.
+
+- **Maximum (Max)**: Indicates the largest value observed for each feature. The maximum value for Sentiments, Subjectivity, Emotion, and Intensity is 1, suggesting that these features have been standardized or scaled to a range between -1 and 1.
 
 ### Histograms
 <table>
