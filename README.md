@@ -643,22 +643,33 @@ Box-and-whisker plots, or simply box plots, visually represent the distribution 
 
 <table>
   <tr>
-    <td>Sentiments Score Outliers</td>
-    <td>Intensity Score Outliers</td>
+    <td>Sentiments Score Plot</td>
+    <td>Intensity Score Plot</td>
   </tr>
   <tr>
     <td><img src="images/bx-sent.png" alt="sentiment" width="500"></td>
     <td><img src="images/bx-int.png" alt="intensity" width="500"></td>
   </tr>
    <tr>
-    <td>Emotion Score Outliers</td>
-    <td>Subjectivity Score Outliers</td>
+    <td>Emotion Score Plot</td>
+    <td>Subjectivity Score Plot</td>
   </tr>
   <tr>
     <td><img src="images/bx-emot.png" alt="emotion" width="500"></td>
     <td><img src="images/bx-subj.png" alt="subjectivity" width="500"></td>
   </tr>
 </table>  
+Box-and-whisker plots offer a comprehensive visualization of data distribution and outliers, providing insights into key statistical measures such as quartiles and median values. In the case of sentiments and emotions, which are measured using similar criteria, we observe consistent quartile values and outlier counts.
+
+Specifically, for sentiments and emotions, with 163 outliers dispersed across various data points, the median value stands at 0.35, with the first quartile (Q1) at 0.15 and the third quartile (Q3) at 0.56. Calculations for the lengths of the right and left tails are shown below:
+```
+For the upper whisker (right tail):
+Upper whisker = Q3 + 1.5 * IQR = 0.56 + 1.5 * 0.41 = 0.56 + 0.615 = 1.175
+
+For the lower whisker (left tail):
+Lower whisker = Q1 - 1.5 * IQR = 0.15 - 1.5 * 0.41 = 0.15 - 0.615 = -0.465
+```
+These formulas can also be applied to calculate the lengths of tails for subjectivity and intensity. Interestingly, while emotions do not exhibit any outliers, subjectivity displays a significant number of 2165 outliers at a single point. This disparity underscores the diverse nature of the dataset and highlights the need for careful consideration when analyzing and interpreting outliers in different variables.
 
 ### Hypothesis Testing  
 ```bash
