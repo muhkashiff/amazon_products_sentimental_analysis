@@ -766,10 +766,13 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 
 ```
 ## Models Comparison  
+Logical models used for machine learning and recommendation are compared below based on their accuracy and classification reports.  
 
-### Classification Reports
+### Classification Reports  
+To ensure the best model is chosen, we evaluated the performance of various machine learning algorithms. We employed vectorization techniques like TF-IDF and count vectorization, which effectively condense data complexity. This not only improves model accuracy but also allows for a deeper dive into each feature's impact through informative heatmaps.
 
 #### Naive Bayes Classification Reports  
+
 <table>
   <tr>
     <td>Tfidf Vectoriztaion Naive Bayes</td>
@@ -830,8 +833,30 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 </table> 
 
 ## Parameters Heatmaps Comparison
+This analysis compares the performance of five machine learning models based on the above provided classification reports using heatmaps. The models are:
 
-#### Models Precision Comparison
+Naive Bayes
+Logistic Regression
+SVM (Support Vector Machine)
+Random Forest
+Gradient Boosting
+
+#### Models Precision Comparison  
+***Count Vectorization comparison***  
+
+SVM excels at identifying negative class instances (1.0) but suffers on the other two classes (0.90 & 0.93). This suggests it might be overfitting to the negative class.
+Random Forest shows high precision across all classes (0.97, 0.92, 0.94).
+Logistic Regression and Naive Bayes have moderate precision.
+Gradient Boosting performs similarly to Naive Bayes.  
+
+***Tfidf Vectorization comparison***  
+
+All models achieved a perfect precision (1.0) for the negative class, indicating they correctly identified all negative instances.
+SVM and Random Forest show high precision for neutral and positive classes (SVM: 0.94 & 0.96, Random Forest: 0.91 & 0.94).
+Logistic Regression performs well on the positive class (0.94) but has a lower precision for the neutral class (0.90).
+Naive Bayes struggles with precision for all classes except the negative class (0.79, 0.84, 0.79).
+Gradient Boosting has moderate precision across all classes (0.68, 0.83, 0.89).  
+
 <table>
   <tr>
     <td>Tfidf Vectoriztaion Precision</td>
@@ -843,7 +868,22 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
   </tr>
 </table>  
 
-#### Models F1 Score Comparison
+#### Models F1 Score Comparison  
+***Count Vectorization comparison***  
+
+F1-score considers both precision and recall. Random Forest maintains a good balance with high F1-scores across all classes (0.67, 0.93, 0.94).
+Logistic Regression shows balanced performance with moderate F1-scores (0.43, 0.94, 0.95).
+SVM has a high F1-score for neutral and positive classes (0.91 & 0.92) but a very low score for the negative class (0.14). This reinforces the overfitting concern.
+Naive Bayes and Gradient Boosting have lower F1-scores, indicating a trade-off between precision and recall.  
+
+***Tfidf Vectorization comparison***   
+
+F1-score considers both precision and recall. SVM has a high F1-score for neutral and positive classes (0.95 & 0.96) but a very low score for the negative class (0.49). This reinforces the overfitting concern.
+Random Forest maintains a good balance with moderate F1-scores across all classes (0.66, 0.93, 0.94).
+Logistic Regression has a high F1-score for the positive class (0.93) but low scores for the other classes (0.00, 0.92). Similar to recall, the 0 F1-score for the negative class is likely due to the model predicting all instances as positive.
+Naive Bayes and Gradient Boosting have lower F1-scores, indicating a trade-off between precision and recall.
+  
+
 <table>
   <tr>
     <td>Tfidf Vectoriztaion F1 Score</td>
@@ -855,7 +895,19 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
   </tr>
 </table>  
 
-#### Models Recall Score Comparison
+#### Models Recall Score Comparison  
+***Count Vectorization comparison***  
+
+Random Forest again shines with high recall for all classes (0.51, 0.93, 0.93). This indicates it captures a good portion of the true positives in each class.
+SVM performs well for neutral and positive classes (0.92) but fails to identify many negative instances (0.07).
+Logistic Regression shows strong recall for neutral and positive classes (0.94 & 0.95). Naive Bayes and Gradient Boosting struggle with recall, particularly for the negative class.  
+***Tfidf Vectorization comparison***  
+
+SVM excels at identifying neutral and positive class instances (0.96 & 0.96) but fails to identify many negative instances (0.33). This suggests it might be overfitting to the neutral and positive classes.
+Random Forest and Logistic Regression show strong recall for all classes (Random Forest: 0.49, 0.94, 0.93; Logistic Regression: 0.00, 0.94, 0.93). It's important to note that Logistic Regression's recall of 0 for the negative class is likely due to the model predicting all instances as positive.
+Naive Bayes performs moderately well on neutral and positive classes (0.74, 0.88) but fails to recall many negative instances (0.00).
+Gradient Boosting shows decent recall across all classes (0.58, 0.88, 0.84).  
+
 <table>
   <tr>
     <td>Tfidf Vectoriztaion Recall Score</td>
@@ -870,11 +922,15 @@ AmazonBasics AAA Performance Alkaline Batteries (36 Count)
 
 ### Models Accuracy Comparison
 
-![Alt Text](images/accuracy-compar.png)
+![Alt Text](images/accuracy-compar.png)  
 
+Overall Accuracy: Random Forest and Logistic Regression achieve high accuracy.
+Balanced Performance: Random Forest offers a good balance between precision, recall, and F1-score across all classes.
+Identifying Negative Class: If correctly identifying negative instances is crucial, Random Forest might be a better choice than SVM.
+Computational Efficiency: Naive Bayes is generally faster to train and predict compared to other models.
 
-
-
+SVM achieves the highest overall accuracy (95%) followed by Logistic Regression (92%) and Random Forest (93%).
+Naive Bayes (81%) and Gradient Boosting (85%) have lower accuracy.
 
 
 ## Results and Conclusions
