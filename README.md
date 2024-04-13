@@ -45,11 +45,12 @@ Our project delves into the intricate world of product reviews, addressing funda
   - [Box whisker Plots](#box-whisker-plots)
   - [Scatter Plot](#scatter-plot)
   - [Hypothesis Testing](#hypothesis-testing)
+- [Products Recommendations Using Machine Learning](#products-recommendations-using-machine-learning)
 - [Models Comparison](#models-comparison)
    - [Classification Reports](#classification-reports)
    - [Parameters Heatmaps Comparison](#parameters-heatmaps-comparison)
    - [Models Accuracy Comparison](#models-accuracy-comparison)
-- [Products Recommendations Using Machine Learning](#products-recommendations-using-machine-learning)
+   - [Choosing the Best Model](#Choosing-the-Best-Model)
 - [Results and Conclusions](#results-and-conclusions)
 - [Dependencies](#dependencies)
 - [Future Work](#future-work)
@@ -588,6 +589,7 @@ Above table presents statistical summary measures for four different features: S
 - **Maximum (Max)**: Indicates the largest value observed for each feature. The maximum value for Sentiments, Subjectivity, Emotion, and Intensity is 1, suggesting that these features have been standardized or scaled to a range between -1 and 1.
 
 ### Histograms  
+
 A histogram is a graph showing the frequency distribution of numerical data through bars. Each bar represents a range of values, and its height indicates the frequency of observations within that range. Histograms help visualize data distribution, identify patterns, outliers, and skewness quickly.   
 
 <table>
@@ -617,6 +619,7 @@ Contrastingly, the Intensity histogram displays a skewed distribution with multi
 In the case of Subjectivity, the majority of data conforms to the bell curve pattern, portraying a central tendency akin to Sentiments and Emotions. This consistency implies a balanced distribution, aligning with the expected behavior of normal data.
 
 ### Scatter Plot  
+
 A scatter plot is a graph used to visualize the relationship between two continuous variables. Each data point is represented by a single point on the graph, with one variable plotted on the horizontal axis and the other on the vertical axis. Scatter plots help identify correlations, outliers, and patterns in the data.  
 
 <table>
@@ -638,7 +641,12 @@ A scatter plot is a graph used to visualize the relationship between two continu
   </tr>
 </table>  
 
+The scatter plots reveal interesting patterns in emotion and sentiment data. These features exhibit a concentration of data points between -0.20 and 0.80, with a consistent line at 1.0. This suggests a central tendency and a possible upper limit for these emotions.
+
+In contrast, subjectivity and intensity plots display a wider spread of data points. The subjectivity plot particularly stands out with two prominent lines at 1.0 and 0.0, along with some gaps. These lines likely indicate instances of high subjectivity (strongly opinionated) and high objectivity (factual). Similarly, the intensity plot shows a clear line at 1.0, suggesting the presence of very intense emotions.  
+
 ### Box whisker Plots  
+
 Box-and-whisker plots, or simply box plots, visually represent the distribution of a dataset. They display key statistical measures such as the median, quartiles, and outliers. The box represents the interquartile range (IQR), with the median depicted as a line inside the box. The "whiskers" extend from the box to the highest and lowest values within 1.5 times the IQR from the upper and lower quartiles, respectively. Box plots provide a concise summary of the data's central tendency, spread, and variability.  
 
 <table>
@@ -672,6 +680,7 @@ Lower whisker = Q1 - 1.5 * IQR = 0.15 - 1.5 * 0.41 = 0.15 - 0.615 = -0.465
 These formulas can also be applied to calculate the lengths of tails for subjectivity and intensity. Interestingly, while emotions do not exhibit any outliers, subjectivity displays a significant number of 2165 outliers at a single point. This disparity underscores the diverse nature of the dataset and highlights the need for careful consideration when analyzing and interpreting outliers in different variables.
 
 ### Hypothesis Testing  
+
 Hypothesis testing is performed by assuming any reviews which got intensity score more than 0.9 and less than 0 are fake. while other are considered genuine. Output of the hypothesis shows that null hypothesis is rejected and there is clear difference between fake and geniune reviews based on intensity assumption.
 ```bash
 # Download the VADER lexicon
@@ -925,19 +934,25 @@ Gradient Boosting shows decent recall across all classes (0.58, 0.88, 0.84).
 ![Alt Text](images/accuracy-compar.png)  
 
 Above is comparison of each model's accuracy based on vectorization. SVM achieves the highest overall accuracy (95%) followed by Logistic Regression (92%) and Random Forest (93%) when tfidf vectorization is used.
-On the other hand when count vectorization is employed, Naive Bayes (81%) and Gradient Boosting (85%) have lower accuracy.Random Forest and Logistic Regression achieve high accuracy.  
+On the other hand when count vectorization is employed, Naive Bayes (81%) and Gradient Boosting (85%) have lower accuracy.Random Forest and Logistic Regression achieve high accuracy.  So 
 
 ### Choosing the Best Model:
+***Count Vectorization***  
 
 Balanced Performance: Random Forest offers a good balance between precision, recall, and F1-score across all classes.
 Identifying Negative Class: If correctly identifying negative instances is crucial, Random Forest might be a better choice than SVM.
-Computational Efficiency: Naive Bayes is generally faster to train and predict compared to other models. 
+Computational Efficiency: Naive Bayes is generally faster to train and predict compared to other models.  
+
+***Tfidf Vectorization***  
+
 Overall Accuracy: SVM achieves the highest accuracy, but it may be overfitting to the neutral and positive classes.
 Balanced Performance: Random Forest offers a good balance between precision, recall, and F1-score across all classes, except for the negative class where it has a lower recall.
 Identifying Negative Class: If correctly identifying negative instances is crucial, none of these models are ideal due to the high number of false negatives (missed negative instances). SVM performs the worst in this aspect.
-Computational Efficiency: Naive Bayes is generally faster to train and predict compared to other models.
+Computational Efficiency: Naive Bayes is generally faster to train and predict compared to other models.  
+However, for recommendation purpose models with high accuracy were used in this project.  
 
-## Results and Conclusions
+## Results and Conclusions  
+Since the aim of the project was to determine the sentiments of consumers reviews of amazon products and find out either reviews are reflecting the authenticity. Also to recommend the products based on consumer review. With the deep analysis as mentioned above it is concluded that most of the amazon products are reflecting consumers' personal opionions. This project also help the new sellers to determine categories to launch the products and also determine best selling products.
 
 ## Dependencies
 
@@ -979,10 +994,7 @@ from nltk.collocations import BigramCollocationFinder
 from nltk.metrics import BigramAssocMeasures
 ```
 ## Future Work
-
-
-## Acknowledgments
-
+Sentiment analysis is an evolving field. with using of update techniques and models even more meaningfull relations can be determined but it depends on the cost. Since deployement  of some sophisticated models  come at cost.
 
 ## Author
 
