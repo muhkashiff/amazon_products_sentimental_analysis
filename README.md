@@ -738,7 +738,7 @@ Reject the null hypothesis. There is a significant difference in the proportion 
 
 
 ## Products Recommendations Using Machine Learning
-
+For model testing purpose positive and negative reviews written and recommended products showed up. outcomes are below.
 ``` bash
 user_review = "I absolutely not loved this product!"
 recommended_items = recommend_items(user_review)
