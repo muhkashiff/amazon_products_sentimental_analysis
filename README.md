@@ -924,18 +924,21 @@ Gradient Boosting shows decent recall across all classes (0.58, 0.88, 0.84).
 
 ![Alt Text](images/accuracy-compar.png)  
 
-Overall Accuracy: Random Forest and Logistic Regression achieve high accuracy.
+Above is comparison of each model's accuracy based on vectorization. SVM achieves the highest overall accuracy (95%) followed by Logistic Regression (92%) and Random Forest (93%) when tfidf vectorization is used.
+On the other hand when count vectorization is employed, Naive Bayes (81%) and Gradient Boosting (85%) have lower accuracy.Random Forest and Logistic Regression achieve high accuracy.  
+
+### Choosing the Best Model:
+
 Balanced Performance: Random Forest offers a good balance between precision, recall, and F1-score across all classes.
 Identifying Negative Class: If correctly identifying negative instances is crucial, Random Forest might be a better choice than SVM.
+Computational Efficiency: Naive Bayes is generally faster to train and predict compared to other models. 
+Overall Accuracy: SVM achieves the highest accuracy, but it may be overfitting to the neutral and positive classes.
+Balanced Performance: Random Forest offers a good balance between precision, recall, and F1-score across all classes, except for the negative class where it has a lower recall.
+Identifying Negative Class: If correctly identifying negative instances is crucial, none of these models are ideal due to the high number of false negatives (missed negative instances). SVM performs the worst in this aspect.
 Computational Efficiency: Naive Bayes is generally faster to train and predict compared to other models.
-
-SVM achieves the highest overall accuracy (95%) followed by Logistic Regression (92%) and Random Forest (93%).
-Naive Bayes (81%) and Gradient Boosting (85%) have lower accuracy.
-
 
 ## Results and Conclusions
 
-  
 ## Dependencies
 
 This project involves using various dependences listed below for data cleaning and predictions.
